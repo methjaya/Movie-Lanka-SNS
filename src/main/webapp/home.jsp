@@ -519,7 +519,6 @@
                     <div class="m-year"><%=stringCheck(NMDetails[17][1])%></div>
                 </div>
             </div>
-
         </div>
     </div>
 
