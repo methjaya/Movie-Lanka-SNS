@@ -10,10 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8925f813-63ab-445f-b628-6f0049413f4f" name="Changes" comment="servletAdded">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +163,7 @@
       <workItem from="1672635147713" duration="27000" />
       <workItem from="1672635254802" duration="791000" />
       <workItem from="1672637436929" duration="996000" />
+      <workItem from="1672727372103" duration="1794000" />
     </task>
     <task id="LOCAL-00001" summary="movie and Seating files">
       <created>1672635329001</created>
