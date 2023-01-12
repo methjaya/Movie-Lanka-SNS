@@ -3,6 +3,7 @@ package com.example.sahansajava;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
+import org.json.JSONArray;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,15 +11,18 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 @WebServlet(name = "movie", value = "/movie")
 public class movie extends HttpServlet {
+    int movieId;
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String[] movieDetails = new String[7];
-        int movieId=1;
-
+        if(request.getParameter("mId")!=null) {
+            movieId = Integer.parseInt(request.getParameter("mId"));
+        }
 
         Connection connection = null;
         Statement statement = null;
@@ -33,23 +37,36 @@ public class movie extends HttpServlet {
             statement = connection.createStatement();
             resultSet = statement.executeQuery("SELECT name,description,release_date,genre,rating,duration,url FROM movies WHERE id='"+movieId+"'");
 
+            List<String> list = new ArrayList<>();
+
             while (resultSet.next()) {
-                movieDetails[0] = resultSet.getString(1);
-                movieDetails[1] = resultSet.getString(2);
-                movieDetails[2] = resultSet.getString(3);
-                movieDetails[3] = resultSet.getString(4);
-                movieDetails[4] = resultSet.getString(5);
-                movieDetails[5] = resultSet.getString(6);
-                movieDetails[6] = resultSet.getString(7);
+                list.add(resultSet.getString(1));
+                list.add(resultSet.getString(2));
+                list.add(resultSet.getString(3));
+                list.add(resultSet.getString(4));
+                list.add(resultSet.getString(5));
+                list.add(resultSet.getString(6));
+                list.add(resultSet.getString(7));
             }
+
+
+            String jsonArrRes = new JSONArray(list).toString();
+
+            response.setContentType("application/json");
+            response.setCharacterEncoding("UTF-8");
+            response.getWriter().write(jsonArrRes);
+
+            resultSet.close();
+            statement.close();
+            connection.close();
         }
         catch (Exception e){
             throw new RuntimeException(e);
         }
 
-        for(String x : movieDetails){
-            out.print(x);
-        }
+//        for(String x : movieDetails){
+//            out.print(x);
+//        }
 
     }
 
