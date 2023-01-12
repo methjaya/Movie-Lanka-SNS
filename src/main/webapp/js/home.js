@@ -31,6 +31,7 @@ function dspCardsNShowing(NowShowingPanelCount){
 }
 
 function dspCards(LatestPanelCount,TrendingPanelCount,NowShowingPanelCount){
+  document.getElementById('crsl-nxt').click();
   dspCardsLatest(LatestPanelCount);
   dspCardsTrending(TrendingPanelCount);
   dspCardsNShowing(NowShowingPanelCount);
