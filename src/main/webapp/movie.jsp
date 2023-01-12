@@ -25,6 +25,18 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/plyr.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+
+    $(document).ready(function() {
+      $.get("movie?mId='"+sessionStorage.getItem("id")+"'", function(responseJson) {
+
+          // $("#dsp-p"+x.toString()).text(item);
+
+      });
+    });
+
+  </script>
 </head>
 
 <body>
