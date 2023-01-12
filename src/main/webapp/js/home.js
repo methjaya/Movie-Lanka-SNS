@@ -37,6 +37,11 @@ function dspCards(LatestPanelCount,TrendingPanelCount,NowShowingPanelCount){
 }
 
 
+function rdr(sId){
+  sessionStorage.setItem("id",sId);
+  window.location.href = "movie.jsp";
+}
+
 
 
 function x(number){
