@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="476cd0bb-a8be-4f4e-954b-85ea57f6d937" name="Changes" comment="Time,Date Selector - Seat Selector - Payment Processing" />
+    <list default="true" id="476cd0bb-a8be-4f4e-954b-85ea57f6d937" name="Changes" comment="Bug fix - nethun" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +154,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8925f813-63ab-445f-b628-6f0049413f4f" name="Changes" comment="" />
+      <changelist id="476cd0bb-a8be-4f4e-954b-85ea57f6d937" name="Changes" comment="Time,Date Selector - Seat Selector - Payment Processing" />
       <created>1672633755616</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -168,6 +168,7 @@
       <workItem from="1673547185329" duration="2225000" />
       <workItem from="1673648077015" duration="1115000" />
       <workItem from="1673671801334" duration="6592000" />
+      <workItem from="1673682661131" duration="81000" />
     </task>
     <task id="LOCAL-00001" summary="movie and Seating files">
       <created>1672635329001</created>
@@ -218,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673682105599</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Bug fix - nethun">
+      <created>1673682705606</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673682705606</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +252,7 @@
     <MESSAGE value="Movie jsp updated(added sessionStorage,jquery)" />
     <MESSAGE value="Movie jsp - carousel added" />
     <MESSAGE value="Time,Date Selector - Seat Selector - Payment Processing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Time,Date Selector - Seat Selector - Payment Processing" />
+    <MESSAGE value="Bug fix - nethun" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fix - nethun" />
   </component>
 </project>
