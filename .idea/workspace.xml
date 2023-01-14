@@ -9,13 +9,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8925f813-63ab-445f-b628-6f0049413f4f" name="Changes" comment="Movie jsp - carousel added">
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="476cd0bb-a8be-4f4e-954b-85ea57f6d937" name="Changes" comment="Movie jsp - carousel added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/dbcon_booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/seats_session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/tselect_dchange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/tselect_session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/final.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/payment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/tselector.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/final.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/payment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/paypal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/tselector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/payment.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/tselector.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/sahansaJava_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/sahansaJava_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/SMTP_Gmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/SMTP_Gmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/movie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/movie.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/seatsel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/seatsel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/seatsel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/seatsel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/seatsel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/seatsel.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +45,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>

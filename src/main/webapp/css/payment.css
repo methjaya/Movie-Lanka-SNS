@@ -1,0 +1,68 @@
+.Movie-Title{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+/*---------------------------------------------------------*/
+.invoice-wrapper{
+    margin-top: 3%;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    color: white;
+
+    border-radius: 2px;
+    box-shadow:
+            0 0 0 3px #333,
+            0 0 0 6px #fff,
+            0 0 0 9px #333;
+}
+
+.invoice-body{
+    margin: auto;
+}
+.primary-details{
+    margin-bottom: 3%;
+}
+
+.ticket-detail-table{
+    margin-bottom: 3%;
+}
+
+.invoice-description p{
+    color: white;
+}
+
+.invoice-description input{
+    background-color: rgb(11, 12, 42);
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid red;
+    color: white;
+}
+
+.invoice-description .movie-dt{
+    color: red;
+}
+.ticket-detail-table{
+    text-align: center;
+    width: 100%;
+}
+
+.btn-sub-wrap{
+    text-align: center;
+}
+
+.ppdiv{
+    width: 300px;
+    text-align: center;
+    margin: 5% auto;
+    color: white;
+}
+/*
+.btn-paypal{
+    background-color: rgb(11, 12, 42);
+    border: 1px solid rgba(0, 0, 0, 0);
+    width: 300px;
+}*/

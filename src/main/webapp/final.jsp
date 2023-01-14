@@ -1,13 +1,11 @@
 <%--
   Created by IntelliJ IDEA.
   User: nethu
-  Date: 1/2/2023
-  Time: 10:13 AM
+  Date: 1/14/2023
+  Time: 1:04 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="java.util.HashMap" %>
-<%@ page import="java.util.Map" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <<html lang="zxx">>
@@ -17,7 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Seat Selection</title>
+  <title>Suceessful</title>
 
 
   <!-- Google Font -->
@@ -29,7 +27,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/plyr.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
-  <link rel="stylesheet" href="css/seatsel.css?v=1.9" type="text/css">
+  <link rel="stylesheet" href="css/seatsel.css" type="text/css">
+  <link rel="stylesheet" href="css/final.css" type="text/css">
 
 
 </head>
@@ -84,102 +83,15 @@
 <!-- Header End -->
 
 <!-- Movie Title Begin-->
-<div class="Movie-Title" id="mt">Error ! ! !</div>
+<div class="Movie-Title">Transaction Successful ! ! !</div>
 <!-- Movie Title End-->
 
-<!--Keys Begin -->
-<div class="seat-keys">
-  <div class="row display">
-    <div class="key-piece row">
-      <div class="key-seat empty" id="seat-available"></div>
-      <div class="key-text">Available</div>
-    </div>
 
-    <div class="key-piece row">
-      <div class="key-seat unavailable" id="seat-unavailable"></div>
-      <div class="key-text">Un-available</div>
-    </div>
-
-    <div class="key-piece row">
-      <div class="key-seat occupied" id="seat-occupied"></div>
-      <div class="key-text">Occupied</div>
-    </div>
-
-    <div class="key-piece row">
-      <div class="key-seat selected" id="seat-selected"></div>
-      <div class="key-text">Selected</div>
-    </div>
-  </div>
+<div class="Final_Greating" id="FG">
+  <img src="./img/popcorn.png" class="img_pop">
+  <p class="greetP">You have Successfully confirmed the purchase !.<br>You'll recieve a confirmation email shortly.</p>
 </div>
-<!--Keys End -->
 
-<!-- Seat-Selector Begin-->
-<div class="Theater-layout">
-  <%
-    String Selected_Date = (String) session.getAttribute("Date");
-    String Selected_Time = (String) session.getAttribute("Time");
-    String Selected_Theatre = (String) session.getAttribute("Name");
-    String Movie_Name = "Harry Potter And The Deathly Hallows: Part 1";
-
-    String Time_Date = String.format("2023-%s %s:00",Selected_Date,Selected_Time);
-
-    dbcon_booking objbooking =  new dbcon_booking();
-
-    Map<String, String> Seat_Layout = new HashMap<>();
-    Map<String, String> Seat_Stats = new HashMap<>();
-
-    Seat_Layout = objbooking.Load_Theatre_Layout(Selected_Theatre);
-    Seat_Stats = objbooking.Set_SeatStatus(Selected_Theatre,Movie_Name,Time_Date);
-
-    int Total_Seats = Integer.parseInt(Seat_Layout.get("Seats"));
-    int Seats_Per_Row = Integer.parseInt(Seat_Layout.get("prow"));
-    int Divider = Integer.parseInt(Seat_Layout.get("Divide"));
-
-    for(int n = 1; n <= (Total_Seats / Seats_Per_Row); n++)
-    {
-      char Row_Letter = (char)(n + 'A' - 1);
-      out.print("<div class=\"row\">");
-
-      for(int m =1; m<= Seats_Per_Row; m++)
-      {
-        String Seat_N = String.format("%s%d",Row_Letter,m);
-
-        if(Seat_Stats.containsKey(Seat_N))
-        {
-          if(Integer.parseInt(Seat_Stats.get(Seat_N)) == 0)
-          {
-            out.print("<div class=\"seat unavailable\">"+Row_Letter+m+"</div>");
-          }
-          else
-          {
-            out.print("<div class=\"seat occupied\">"+Row_Letter+m+"</div>");
-          }
-        }
-        else
-        {
-          out.print("<div class=\"seat\">"+Row_Letter+m+"</div>");
-        }
-      }
-      out.print("</div>");
-    }
-  %>
-
-  <div class="screen">All Eyes This Way Please !</div>
-</div>
-<!-- Seat-Selector End-->
-
-<!-- Buy Begin -->
-<div class="buy-cont">
-  <form action="booking" method="POST" id="buyfrm">
-    <span class="buytxt">Tickets : </span>
-    <span class="ticket-count buytxt" id="tc">0</span>
-
-    <span class="buytxt">Total Price : </span>
-    <span class="total-price buytxt" id="tp">0</span>
-    <input type="button" value="Proceed" name="buy-btn" class="buybtn" id="bbtn">
-  </form>
-</div>
-<!-- Buy End-->
 
 <!-- Footer Section Begin -->
 <footer class="footer-seat">
@@ -205,7 +117,7 @@
       </div>
       <div class="col-lg-3">
         <p>
-          Copyright &copy;<script>document.write(new Date().getFullYear().toString());</script> All rights reserved |  <i class="fa fa-heart" aria-hidden="true"></i> by SNS Developers
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="fa fa-heart" aria-hidden="true"></i> by SNS Developers
         </p>
 
       </div>
@@ -216,13 +128,12 @@
 
 <!-- Js Plugins -->
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/player.js"></script>
 <script src="js/mixitup.min.js"></script>
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/seatsel.js?v=1.8"></script>
+<script src="js/seatsel.js"></script>
 </body>
 </html>
