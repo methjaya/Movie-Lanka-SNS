@@ -1,0 +1,95 @@
+.Movie-Title{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/*-------------------------------------------------------------------*/
+.ttselector-body{
+    height: 71vh;
+    overflow: auto;
+    color: white;
+    padding-bottom: 2%;
+}
+
+.T-name{
+    margin-left: 2%;
+}
+
+.ttselector-theatre{
+    margin-bottom: 2%;
+}
+
+.ttselector-theatre hr{
+    background-color: white;
+    margin-left: 0;
+    width: 90%;
+    box-shadow: 0 0 10px 5px #333;
+}
+
+.t-available-times{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+}
+
+.time{
+    border: 1px solid #0081cb;
+    display: flex;
+    background-color: rgba(21, 22, 80, 1);
+    width: 130px;
+    height: 70px;
+    color: white;
+    margin: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+.full {
+    background-color: rgba(229, 54, 55, 0.8);
+}
+
+.time:not(.full):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px 5px #333;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+/*-------------------------------------------------------------------*/
+
+.date-select-bar{
+    background-color: rgba(51, 51, 51, 0.5);
+    border: 1px solid white;
+    display: flex;
+    height: 50px;
+    margin: 1% 1% 2%;
+    border-radius: 15px;
+}
+
+.date-bx{
+    border: 2px solid black;
+    background-color: #333;
+    width: 5%;
+    margin-right: 1%;
+    margin-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.selected{
+    border: 2px solid black;
+    background-color: #0081cb;
+}
+
+.date-bx:not(.selected):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px 5px #333;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
