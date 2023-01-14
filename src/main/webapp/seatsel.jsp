@@ -47,7 +47,7 @@
       <div class="col-lg-2">
         <div class="header__logo">
           <a href="./index.jsp">
-            <img src="img/logo2.png" alt="">
+            <img src="img/logo.png" alt="">
           </a>
         </div>
       </div>
