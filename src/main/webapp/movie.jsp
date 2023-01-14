@@ -104,18 +104,21 @@
   </div>
 </div>
 <!-- Breadcrumb End -->
-
 <!-- Anime Section Begin -->
 <section class="anime-details spad">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <div class="anime__video__player">
-          <video id="player" playsinline controls data-poster="./videos/poster.jpg">
-            <source src="videos/1.mp4" type="video/mp4" />
-            <!-- Captions are optional -->
-            <track kind="captions" label="English captions" src="#" srclang="en" default />
-          </video>
+
+          <iframe width="1080" height="600"
+                  src="https://www.youtube.com/embed/fFGS4zZWGoA">
+          </iframe>
+          <!--  <video id="player" playsinline controls data-poster="./videos/poster.jpg">
+              <source src="https://www.youtube.com/watch?v=VyHV0BRtdxo" type="video/mp4" />
+              <!-- Captions are optional
+              <track kind="captions" label="English captions" src="#" srclang="en" default />
+            </video>-->
         </div>
 
 
@@ -131,7 +134,6 @@
                   <div class="anime__details__text">
                     <div class="anime__details__title">
                       <h3>Harry Potter And The Deathly Hallows: Part 1</h3>
-                      <!-- <span>sub title if needed</span>-->
                     </div>
                     <div class="anime__details__rating">
                       <div class="rating">

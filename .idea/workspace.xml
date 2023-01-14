@@ -11,10 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8925f813-63ab-445f-b628-6f0049413f4f" name="Changes" comment="Movie jsp updated(added sessionStorage,jquery)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +86,54 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50246" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -172,6 +216,7 @@
       <workItem from="1672727372103" duration="1794000" />
       <workItem from="1672846995375" duration="169000" />
       <workItem from="1673547185329" duration="2165000" />
+      <workItem from="1673673312744" duration="948000" />
     </task>
     <task id="LOCAL-00001" summary="movie and Seating files">
       <created>1672635329001</created>
