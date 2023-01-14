@@ -91,7 +91,7 @@ public class booking extends HttpServlet {
                     }
 
                     // Redirect back to seat selection
-                    RequestDispatcher disptacher = request.getRequestDispatcher("index.jsp");
+                    RequestDispatcher disptacher = request.getRequestDispatcher("seatsel.js");
                     disptacher.include(request,response);
                 }
             }
@@ -100,7 +100,7 @@ public class booking extends HttpServlet {
                 log("Un-available");
 
                 // Redirect back to seat selection
-                RequestDispatcher disptacher = request.getRequestDispatcher("index.jsp");
+                RequestDispatcher disptacher = request.getRequestDispatcher("seatsel.js");
                 disptacher.include(request,response);
             }
         }

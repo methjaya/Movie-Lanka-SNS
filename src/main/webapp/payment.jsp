@@ -10,10 +10,6 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.example.sahansajava.dbcon_booking" %>
 <%@ page import="java.util.Arrays" %>
-<%@ page import="java.util.concurrent.ScheduledExecutorService" %>
-<%@ page import="java.util.concurrent.ScheduledFuture" %>
-<%@ page import="java.util.concurrent.Executors" %>
-<%@ page import="java.util.concurrent.TimeUnit" %>
 <%@ page import="java.io.IOException" %>
 
 <html><!DOCTYPE html>
@@ -37,7 +33,7 @@
     <link rel="stylesheet" href="css/plyr.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/seatsel.css" type="text/css">
-    <link rel="stylesheet" href="css/payment.css?v=1.1" type="text/css">
+    <link rel="stylesheet" href="css/payment.css" type="text/css">
 
 
 </head>
