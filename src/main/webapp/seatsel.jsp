@@ -9,6 +9,7 @@
 <%@ page import="java.util.HashMap" %>
 <%@ page import="java.util.Map" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="com.example.sahansajava.dbcon_booking" %>
 <!DOCTYPE html>
 <<html lang="zxx">>
 

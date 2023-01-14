@@ -9,34 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="476cd0bb-a8be-4f4e-954b-85ea57f6d937" name="Changes" comment="Movie jsp - carousel added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/dbcon_booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/seats_session.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/tselect_dchange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/tselect_session.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/final.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/payment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/tselector.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/final.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/payment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/paypal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/tselector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/payment.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/tselector.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/sahansaJava_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/sahansaJava_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/SMTP_Gmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/SMTP_Gmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/seatsel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/seatsel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/seatsel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/seatsel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/seatsel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/seatsel.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="476cd0bb-a8be-4f4e-954b-85ea57f6d937" name="Changes" comment="Time,Date Selector - Seat Selector - Payment Processing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -238,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673549399198</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Time,Date Selector - Seat Selector - Payment Processing">
+      <created>1673682105599</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673682105599</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +243,7 @@
     <MESSAGE value="Home Jsp,JS updated" />
     <MESSAGE value="Movie jsp updated(added sessionStorage,jquery)" />
     <MESSAGE value="Movie jsp - carousel added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Movie jsp - carousel added" />
+    <MESSAGE value="Time,Date Selector - Seat Selector - Payment Processing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Time,Date Selector - Seat Selector - Payment Processing" />
   </component>
 </project>
