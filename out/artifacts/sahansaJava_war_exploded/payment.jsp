@@ -10,10 +10,6 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.example.sahansajava.dbcon_booking" %>
 <%@ page import="java.util.Arrays" %>
-<%@ page import="java.util.concurrent.ScheduledExecutorService" %>
-<%@ page import="java.util.concurrent.ScheduledFuture" %>
-<%@ page import="java.util.concurrent.Executors" %>
-<%@ page import="java.util.concurrent.TimeUnit" %>
 <%@ page import="java.io.IOException" %>
 
 <html><!DOCTYPE html>
@@ -37,7 +33,7 @@
     <link rel="stylesheet" href="css/plyr.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/seatsel.css" type="text/css">
-    <link rel="stylesheet" href="css/payment.css?v=1.1" type="text/css">
+    <link rel="stylesheet" href="css/payment.css" type="text/css">
 
 
 </head>
@@ -64,15 +60,6 @@
                     <nav class="header__menu mobile-menu">
                         <ul>
                             <li class="active"><a href="./index.jsp">Homepage</a></li>
-                            <li><a href="./index.jsp">Categories <span class="arrow_carrot-down"></span></a>
-                                <ul class="dropdown">
-                                    <li><a href="./index.jsp">Category 1</a></li>
-                                    <li><a href="./index.jsp">Category 2</a></li>
-                                    <li><a href="./index.jsp">Category 3</a></li>
-                                    <li><a href="./index.jsp">Category 4</a></li>
-                                    <li><a href="./index.jsp">Category 5</a></li>
-                                </ul>
-                            </li>
 
                             <li><a href="#">Contacts</a></li>
                         </ul>
@@ -189,7 +176,7 @@
                 <div class="footer__nav">
                     <ul>
                         <li class="active"><a href="./index.jsp">Homepage</a></li>
-                        <li><a href="./index.jsp">Categories</a></li>
+
 
                         <li><a href="#">Contacts</a></li>
                     </ul>

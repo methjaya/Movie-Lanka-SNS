@@ -8,7 +8,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.HashMap" %>
 <%@ page import="java.util.Map" %>
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="com.example.sahansajava.dbcon_booking" %>
 <!DOCTYPE html>
 <<html lang="zxx">>
@@ -57,15 +56,7 @@
           <nav class="header__menu mobile-menu">
             <ul>
               <li class="active"><a href="./index.jsp">Homepage</a></li>
-              <li><a href="./index.jsp">Categories <span class="arrow_carrot-down"></span></a>
-                <ul class="dropdown">
-                  <li><a href="./index.jsp">Category 1</a></li>
-                  <li><a href="./index.jsp">Category 2</a></li>
-                  <li><a href="./index.jsp">Category 3</a></li>
-                  <li><a href="./index.jsp">Category 4</a></li>
-                  <li><a href="./index.jsp">Category 5</a></li>
-                </ul>
-              </li>
+
 
               <li><a href="#">Contacts</a></li>
             </ul>
@@ -198,7 +189,7 @@
         <div class="footer__nav">
           <ul>
             <li class="active"><a href="./index.jsp">Homepage</a></li>
-            <li><a href="./index.jsp">Categories</a></li>
+
 
             <li><a href="#">Contacts</a></li>
           </ul>
@@ -224,6 +215,6 @@
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/seatsel.js?v=1.8"></script>
+<script src="js/seatsel.js"></script>
 </body>
 </html>

@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="css/plyr.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/seatsel.css" type="text/css">
-    <link rel="stylesheet" href="css/tseelctor.css" type="text/css">
+    <link rel="stylesheet" href="css/tselector.css" type="text/css">
 
 
 </head>
@@ -61,15 +61,7 @@
                     <nav class="header__menu mobile-menu">
                         <ul>
                             <li class="active"><a href="./index.jsp">Homepage</a></li>
-                            <li><a href="./index.jsp">Categories <span class="arrow_carrot-down"></span></a>
-                                <ul class="dropdown">
-                                    <li><a href="./index.jsp">Category 1</a></li>
-                                    <li><a href="./index.jsp">Category 2</a></li>
-                                    <li><a href="./index.jsp">Category 3</a></li>
-                                    <li><a href="./index.jsp">Category 4</a></li>
-                                    <li><a href="./index.jsp">Category 5</a></li>
-                                </ul>
-                            </li>
+
 
                             <li><a href="#">Contacts</a></li>
                         </ul>
@@ -165,7 +157,7 @@
                 <div class="footer__nav">
                     <ul>
                         <li class="active"><a href="./index.jsp">Homepage</a></li>
-                        <li><a href="./index.jsp">Categories</a></li>
+
 
                         <li><a href="#">Contacts</a></li>
                     </ul>
@@ -191,6 +183,6 @@
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/tselector.js?v=2.3"></script>
+<script src="js/tselector.js"></script>
 </body>
 </html>

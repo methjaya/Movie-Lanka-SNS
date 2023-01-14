@@ -11,12 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="476cd0bb-a8be-4f4e-954b-85ea57f6d937" name="Changes" comment="Bug fix - nethun3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/tselector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/tselector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/payment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/payment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/seatsel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/seatsel.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tselector.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tselector.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +26,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -153,6 +148,10 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Tomcat 10.0.27" />
+      <item itemvalue="Tomcat Server.movie.jsp" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Tomcat Server.movie.jsp" />
