@@ -16,13 +16,15 @@ import java.util.List;
 
 @WebServlet(name = "movie", value = "/movie")
 public class movie extends HttpServlet {
-    int movieId;
+    String movieId;
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         if(request.getParameter("mId")!=null) {
-            movieId = Integer.parseInt(request.getParameter("mId"));
+            movieId = request.getParameter("mId").replaceAll("'","");
         }
+
+        System.out.println(movieId);
 
         Connection connection = null;
         Statement statement = null;
@@ -35,7 +37,7 @@ public class movie extends HttpServlet {
             Class.forName("com.mysql.jdbc.Driver");
             connection = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/testmdb", "root", "");
             statement = connection.createStatement();
-            resultSet = statement.executeQuery("SELECT name,description,release_date,genre,rating,duration,url FROM movies WHERE id='"+movieId+"'");
+            resultSet = statement.executeQuery("SELECT name,description,release_date,genre,rating,duration,url FROM movies WHERE name='"+movieId+"'");
 
             List<String> list = new ArrayList<>();
 
@@ -51,6 +53,8 @@ public class movie extends HttpServlet {
 
 
             String jsonArrRes = new JSONArray(list).toString();
+
+            System.out.println(jsonArrRes);
 
             response.setContentType("application/json");
             response.setCharacterEncoding("UTF-8");

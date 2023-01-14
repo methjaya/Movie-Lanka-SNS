@@ -9,12 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8925f813-63ab-445f-b628-6f0049413f4f" name="Changes" comment="Movie jsp updated(added sessionStorage,jquery)">
+    <list default="true" id="8925f813-63ab-445f-b628-6f0049413f4f" name="Changes" comment="Movie jsp - carousel added">
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/SMTP_Gmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/SMTP_Gmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/movie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/movie.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +172,9 @@
       <workItem from="1672637436929" duration="996000" />
       <workItem from="1672727372103" duration="1794000" />
       <workItem from="1672846995375" duration="169000" />
-      <workItem from="1673547185329" duration="2165000" />
+      <workItem from="1673547185329" duration="2225000" />
+      <workItem from="1673648077015" duration="1115000" />
+      <workItem from="1673671801334" duration="6592000" />
     </task>
     <task id="LOCAL-00001" summary="movie and Seating files">
       <created>1672635329001</created>
@@ -208,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673514513597</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Movie jsp - carousel added">
+      <created>1673549399198</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673549399198</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +242,7 @@
     <MESSAGE value="Movie servlet updated" />
     <MESSAGE value="Home Jsp,JS updated" />
     <MESSAGE value="Movie jsp updated(added sessionStorage,jquery)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Movie jsp updated(added sessionStorage,jquery)" />
+    <MESSAGE value="Movie jsp - carousel added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Movie jsp - carousel added" />
   </component>
 </project>

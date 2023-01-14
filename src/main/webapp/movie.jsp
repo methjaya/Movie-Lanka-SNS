@@ -32,6 +32,14 @@
       $.get("movie?mId='"+sessionStorage.getItem("id")+"'", function(responseJson) {
 
           // $("#dsp-p"+x.toString()).text(item);
+        document.getElementById("movie-name").textContent=responseJson[0];
+        document.getElementById("movie-description").textContent=responseJson[1];
+        document.getElementById("movie-release-date").textContent=responseJson[2];
+        document.getElementById("movie-genre").textContent=responseJson[3];
+        document.getElementById("movie-rating").textContent=responseJson[4];
+        document.getElementById("movie-duration").textContent=responseJson[5];
+        $('#i-frame-video').attr('src', responseJson[6]);
+        console.log(responseJson)
 
       });
     });
@@ -111,11 +119,15 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="anime__video__player">
-          <video id="player" playsinline controls data-poster="./videos/poster.jpg">
-            <source src="videos/1.mp4" type="video/mp4" />
-            <!-- Captions are optional -->
-            <track kind="captions" label="English captions" src="#" srclang="en" default />
-          </video>
+
+          <iframe width="1080" height="600" id="i-frame-video"
+                  src="https://www.youtube.com/embed/fFGS4zZWGoA">
+          </iframe>
+          <!--  <video id="player" playsinline controls data-poster="./videos/poster.jpg">
+              <source src="https://www.youtube.com/watch?v=VyHV0BRtdxo" type="video/mp4" />
+              <!-- Captions are optional
+              <track kind="captions" label="English captions" src="#" srclang="en" default />
+            </video>-->
         </div>
 
 
@@ -130,7 +142,7 @@
                 <div class="col-lg-9">
                   <div class="anime__details__text">
                     <div class="anime__details__title">
-                      <h3>Harry Potter And The Deathly Hallows: Part 1</h3>
+                      <h3 id="movie-name">Harry Potter And The Deathly Hallows: Part 1</h3>
                       <!-- <span>sub title if needed</span>-->
                     </div>
                     <div class="anime__details__rating">
@@ -143,23 +155,23 @@
                       </div>
 
                     </div>
-                    <p>After Voldemort takes over the Ministry of Magic, Harry, Ron and Hermione are forced into hiding.
+                    <p id="movie-description">After Voldemort takes over the Ministry of Magic, Harry, Ron and Hermione are forced into hiding.
                       They try to decipher the clues left to them by Dumbledore to find and destroy Voldemort's Horcruxes.</p>
                     <div class="anime__details__widget">
                       <div class="row">
                         <div class="col-lg-6 col-md-6">
                           <ul>
 
-                            <li><span>Release Date:</span> 19 Nov, 2010</li>
+                            <li><span >Release Date:</span><span id="movie-release-date"> 19 Nov, 2010 </span></li>
 
-                            <li><span>Genre:</span> Action, Adventure, Fantasy, Magic</li>
+                            <li><span >Genre:</span><span id="movie-genre"> Action, Adventure, Fantasy, Magic</span></li>
                           </ul>
                         </div>
                         <div class="col-lg-6 col-md-6">
                           <ul>
 
-                            <li><span>Rating:</span> 8.5 / 161 times</li>
-                            <li><span>Duration:</span> 2h 26m</li>
+                            <li><span>Rating:</span><span id="movie-rating"> 8.5 / 161 times</span> </li>
+                            <li><span>Duration:</span><span id="movie-duration">2h 26m</span> </li>
 
                           </ul>
                         </div>

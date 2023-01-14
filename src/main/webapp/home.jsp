@@ -144,7 +144,6 @@
                             src=<%=LatestMDetails[0][2]%>;
                             alt="Interstellar"
                             class="latest-panel-img"
-                    <%--                            onclick="window.location.href='https://www.youtube.com/'"--%>
                     />
                 </div>
                 <div class="title">
@@ -262,7 +261,7 @@
             <div class="rec-card trc" id="t2" onclick="rdr('<%=TMDetails[2][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=TMDetails[2][2]%>;
+                            src="<%=TMDetails[2][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
