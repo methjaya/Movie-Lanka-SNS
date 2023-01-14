@@ -63,7 +63,7 @@ function redirectTONextPage(S_T,T_N){
         url: "tselect_session",
         data: {SelectedTime: S_T, SelectedDate : Clicked_Date, SelectedTheatre : T_N},
         success: function(){
-            window.location.href = "index.jsp";
+            window.location.href = "seatsel.jsp";
         }
     });
 }

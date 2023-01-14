@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="css/plyr.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/seatsel.css" type="text/css">
-    <link rel="stylesheet" href="css/tseelctor.css" type="text/css">
+    <link rel="stylesheet" href="css/tselector.css" type="text/css">
 
 
 </head>
@@ -183,6 +183,6 @@
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/tselector.js?v=2.3"></script>
+<script src="js/tselector.js"></script>
 </body>
 </html>

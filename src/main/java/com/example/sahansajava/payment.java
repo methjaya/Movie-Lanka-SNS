@@ -92,7 +92,7 @@ public class payment extends HttpServlet {
 
             // If fails Send a mail to the developer
 
-            RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("seatsel.js");
             dispatcher.forward(request, response);
         }
 
@@ -108,7 +108,7 @@ public class payment extends HttpServlet {
 
             // If fails Send a mail to the developer
 
-            RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("seatsel.js");
             dispatcher.forward(request, response);
         }
     }
