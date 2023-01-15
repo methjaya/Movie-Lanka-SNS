@@ -67,7 +67,6 @@ public class config extends HttpServlet {
                 nCount++;
             }
 
-            System.out.println(LDetails[0][0]+" "+LDetails[0][1]+" "+LDetails[0][2]);
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }

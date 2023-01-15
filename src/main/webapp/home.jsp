@@ -115,9 +115,14 @@
 <body onLoad="dspCards(<%=countL%>,<%=countT%>,<%=countN%>)">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<div class="nav-img-div">
+    <div class="nav-img-inner-div"><img src="img/logo.png" id="nav-logo"></div>
+</div>
 <div class="topnav" id="myTopnav">
-    <a href="index.jsp" class="active">Home</a>
-    <a href="contact.jsp">Contact Us</a>
+    <div class="nav-div">
+        <div class="nav-div-inner nav-div-inner-1"><a href="index.jsp" class="active">Home</a></div>
+        <div class="nav-div-inner"><a href="contact.jsp">Contact Us</a></div>
+    </div>
 </div>
 
 
@@ -599,7 +604,10 @@
         </div>
     </div>
 </div>
+
+
 </body>
+
 </html>
 
 
