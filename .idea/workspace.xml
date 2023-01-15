@@ -9,10 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90645b53-a754-4632-b1da-57c4be91bcb2" name="Changes" comment="Connected_Pages - Done">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_15_2023_10_23_AM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="90645b53-a754-4632-b1da-57c4be91bcb2" name="Changes" comment="SMTP Booking Confirmation - Done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/payment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +156,7 @@
       <updated>1673758706749</updated>
       <workItem from="1673758709383" duration="476000" />
       <workItem from="1673759200597" duration="10651000" />
-      <workItem from="1673783335658" duration="1109000" />
+      <workItem from="1673783335658" duration="2200000" />
     </task>
     <task id="LOCAL-00001" summary="Connected_Pages">
       <created>1673766429008</created>
@@ -174,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673769839595</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="SMTP Booking Confirmation - Done">
+      <created>1673784487777</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673784487777</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +199,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Connected_Pages" />
     <MESSAGE value="Connected_Pages - Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connected_Pages - Done" />
+    <MESSAGE value="SMTP Booking Confirmation - Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="SMTP Booking Confirmation - Done" />
   </component>
 </project>
