@@ -6,8 +6,6 @@ const pay = document.getElementById("paypal-button-container");
 //Hide Initially
 pay.hidden = true;
 
-document.getElementById('mt').innerHTML = "Harry Potter And The Deathly Hallows: Part 1";
-
 Invoice_Today.innerHTML = Today();
 
 let randnum = generateRandomNumber();

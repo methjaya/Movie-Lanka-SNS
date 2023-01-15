@@ -25,26 +25,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/plyr.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script>
 
-    $(document).ready(function() {
-      $.get("movie?mId='"+sessionStorage.getItem("id")+"'", function(responseJson) {
-
-          // $("#dsp-p"+x.toString()).text(item);
-        document.getElementById("movie-name").textContent=responseJson[0];
-        document.getElementById("movie-description").textContent=responseJson[1];
-        document.getElementById("movie-release-date").textContent=responseJson[2];
-        document.getElementById("movie-genre").textContent=responseJson[3];
-        document.getElementById("movie-rating").textContent=responseJson[4];
-        document.getElementById("movie-duration").textContent=responseJson[5];
-        $('#i-frame-video').attr('src', responseJson[6]);
-        console.log(responseJson)
-
-      });
-    });
-
-  </script>
 </head>
 
 <body>
@@ -88,22 +69,7 @@
 </header>
 <!-- Header End -->
 
-<!-- Breadcrumb Begin -->
-<div class="breadcrumb-option">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="breadcrumb__links">
-          <a href="./index.jsp"><i class="fa fa-home"></i> Home</a>
-          <a href="./categories.html">Categories</a>
-          <a href="#">Fantasy</a>
-          <span>Harry Potter And The Deathly Hallows: Part 1</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Breadcrumb End -->
+
 
 <!-- Anime Section Begin -->
 <section class="anime-details spad">
@@ -117,7 +83,7 @@
           </iframe>
           <!--  <video id="player" playsinline controls data-poster="./videos/poster.jpg">
               <source src="https://www.youtube.com/watch?v=VyHV0BRtdxo" type="video/mp4" />
-              <!-- Captions are optional
+               Captions are optional -->
               <track kind="captions" label="English captions" src="#" srclang="en" default />
             </video>-->
         </div>
@@ -169,10 +135,14 @@
                         </div>
                       </div>
                     </div>
+
+                    <input type="hidden" name="tckt_cost" id="tckt_cst" value="0">
+
                     <div class="anime__details__btn">
 
-                      <a href="/booktickets.html" class="watch-btn"><span>Book Tickets</span> <i
-                              class="fa fa-angle-right"></i></a>
+                      <div class="watch-btn" id="buy_tcktbtn"><span id="bk_tckt" style="cursor: pointer; user-select: none;">Book Tickets</span> <i
+                              class="fa fa-angle-right"></i></div>
+
                     </div>
                   </div>
                 </div>
@@ -258,17 +228,19 @@
             </form>
           </div>
         </div>
+      </div>
         <!-- Search model end -->
 
         <!-- Js Plugins -->
         <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/player.js"></script>
         <script src="js/mixitup.min.js"></script>
         <script src="js/jquery.slicknav.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
-
+        <script src="js/movie.js"></script>
 </body>
 
 </html>

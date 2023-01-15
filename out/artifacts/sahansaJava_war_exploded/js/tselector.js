@@ -4,8 +4,6 @@ const Time_Container = document.getElementById("time-cont")
 
 let Clicked_Date = document.getElementsByClassName("selected")[0].innerHTML;
 
-document.getElementById('mt').innerHTML = "Harry Potter And The Deathly Hallows: Part 1";
-
 DateBar.addEventListener("click", function(event) {
     let Section = event.target;
 

@@ -12,7 +12,7 @@
 <%@ page import="java.util.Arrays" %>
 <%@ page import="java.io.IOException" %>
 
-<html><!DOCTYPE html>
+<!DOCTYPE html>
 <<html lang="zxx">>
 
 <head>
@@ -79,7 +79,17 @@
 <!-- Header End -->
 
 <!-- Movie Title Begin-->
-<div class="Movie-Title" id="mt">Error ! ! !</div>
+<%
+    String Movie_Name = (String) session.getAttribute("Movie_name");
+    if(Movie_Name != null)
+    {
+        out.print("<div class=\"Movie-Title\" id=\"mt\">"+Movie_Name+"</div>");
+    }
+    else
+    {
+        out.print("<div class=\"Movie-Title\" id=\"mt\">Error ! ! !</div>");
+    }
+%>
 <!-- Movie Title End-->
 
 <!--invoice Payment Begin-->
@@ -107,7 +117,7 @@
                     String Selected_Date = (String) session.getAttribute("Date");
                     String Selected_Time = (String) session.getAttribute("Time");
                     String Selected_Theatre = (String) session.getAttribute("Name");
-                    String Movie_Name = "Harry Potter And The Deathly Hallows: Part 1";
+                    String Ticket_Price = (String) session.getAttribute("Movie_price");
 
                     String Time_Date = String.format("2023-%s %s:00",Selected_Date,Selected_Time);
                     List<String> Seats = new ArrayList<>();
@@ -133,7 +143,7 @@
                         out.print("<td>"+n+"</td>");
                         out.print("<td>"+Seat+"</td>");
                         out.print("<td>"+Time_Date+"</td>");
-                        out.print("<td>350</td>");
+                        out.print("<td>"+Ticket_Price+"</td>");
                         out.print("</tr>");
                     }
                 %>
@@ -145,7 +155,7 @@
                     I (<input class = "in" type="text" name="Fname" id="in-fname" placeholder="*First Name" required> , <input class = "in" type="text" name="Lname" id="in-lname" placeholder="*Last Name" required>, <input class = "in" type="text" name="NIC" id="in-nic" placeholder="*NIC" required>, <input class = "in" type="email" name="Email" id="in-email" placeholder="*Email" required>) herby confirm,<br><br>
 
                     <%
-                        out.print("I order <span class=\"movie-dt\" id=\"mtotp\">"+n+"</span> tickets for the movie : <span class=\"movie-dt\" id=\"mname\">"+Movie_Name+"</span>, on Date and Time : <span class=\"movie-dt\" id=\"mdate\">"+Time_Date+"</span>, for the price of : Rs.<span class=\"movie-dt\" id=\"mprice\">"+(n * 350)+"</span>/= and\n" +
+                        out.print("I order <span class=\"movie-dt\" id=\"mtotp\">"+n+"</span> tickets for the movie : <span class=\"movie-dt\" id=\"mname\">"+Movie_Name+"</span>, on Date and Time : <span class=\"movie-dt\" id=\"mdate\">"+Time_Date+"</span>, for the price of : Rs.<span class=\"movie-dt\" id=\"mprice\">"+(n * Integer.parseInt(Ticket_Price))+"</span>/= and\n" +
                                 "                    I acknowledge all the Terms and Conditions of the movie theatre including, the dates cannot be changed or the tickets cannot be cancelled once the order is placed and will obey them till the end of the movie.<br><br>(Note :- Buy button will appear once all the input fields are filled !.)");
                     %>
                 </p>
@@ -169,7 +179,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="footer__logo">
-                    <a href="./index.jsp"><img src="img/logo2.png" alt=""></a>
+                    <a href="./index.jsp"><img src="img/logo.png" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-6">
