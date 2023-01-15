@@ -9,17 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90645b53-a754-4632-b1da-57c4be91bcb2" name="Changes" comment="t1">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_15_2023_5_39_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_15_2023_5_39_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_15_2023_5_57_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_15_2023_5_57_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/dbcon_booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/dbcon_booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/tselect_dchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/tselect_dchange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/paypal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/paypal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/payment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/payment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tselector.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tselector.jsp" afterDir="false" />
+    <list default="true" id="90645b53-a754-4632-b1da-57c4be91bcb2" name="Changes" comment="breadcrump removed (nav)">
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/movie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/movie.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -101,7 +101,7 @@
         dbcon_booking objbooking = new dbcon_booking();
         String SDate = "2023-01-31";
 
-        All_Available_Dates = objbooking.Load_Dates();
+        All_Available_Dates = objbooking.Load_Dates(Movie_Name);
 
         int n = 0;
         for(String date : All_Available_Dates){
@@ -126,7 +126,7 @@
     <div class="ttselector-body" id="time-cont">
         <%
             ConcurrentMap<String, List<String>> Theatre_Details = new ConcurrentHashMap<>();
-            Theatre_Details =  objbooking.Load_Times(SDate);
+            Theatre_Details =  objbooking.Load_Times(SDate, Movie_Name);
 
             for (Map.Entry<String, List<String>> theatre : Theatre_Details.entrySet()) {
                 String name = theatre.getKey();
