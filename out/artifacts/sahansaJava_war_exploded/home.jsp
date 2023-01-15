@@ -45,7 +45,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/home.css" rel="stylesheet">
+
+<%--        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">--%>
+<%--        <link rel="stylesheet" href="css/plyr.css" type="text/css">--%>
+<%--        <link rel="stylesheet" href="css/style.css" type="text/css">--%>
+<%--        <link rel="stylesheet" href="css/seatsel.css?v=1.9" type="text/css">--%>
+            <link rel="stylesheet" href="css/navtest.css" type="text/css">
+
+
         <script src="js/home.js" type="text/javascript"></script>
+
         <script>
             let slideIndex = 0;
             let timeoutId = null;
@@ -104,6 +113,43 @@
         <title>Home</title>
     </head>
 <body onLoad="dspCards(<%=countL%>,<%=countT%>,<%=countN%>)">
+
+<%--<div class="nav-bar">--%>
+<%--<header class="header-seat">--%>
+<%--    <div class="container">--%>
+<%--        <div class="row">--%>
+<%--            <div class="col-lg-2">--%>
+<%--                <div class="header__logo">--%>
+<%--                    <a href="./index.jsp">--%>
+<%--                        <img src="img/logo.png" alt="">--%>
+<%--                    </a>--%>
+<%--                </div>--%>
+<%--            </div>--%>
+<%--            <div class="col-lg-8">--%>
+<%--                <div class="header__nav">--%>
+<%--                    <nav class="header__menu mobile-menu">--%>
+<%--                        <ul>--%>
+<%--                            <li class="active"><a href="./index.jsp">Homepage</a></li>--%>
+
+
+<%--                            <li><a href="#">Contacts</a></li>--%>
+<%--                        </ul>--%>
+<%--                    </nav>--%>
+<%--                </div>--%>
+<%--            </div>--%>
+<%--            <div class="col-lg-2">--%>
+<%--                <div class="header__right">--%>
+<%--                    <a href="#" class="search-switch"><span class="icon_search"></span></a>--%>
+<%--                    <a href="./index.jsp"><span class="icon_profile"></span></a>--%>
+<%--                </div>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--        <div id="mobile-menu-wrap"></div>--%>
+<%--    </div>--%>
+<%--</header>--%>
+<%--</div>--%>
+
+
 <div class="home-container" id="home-container">
     <div class="carousel">
         <div class="slideshow-container">
