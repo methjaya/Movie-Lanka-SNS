@@ -37,7 +37,7 @@ public class movie extends HttpServlet {
             Class.forName("com.mysql.jdbc.Driver");
             connection = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/testmdb", "root", "");
             statement = connection.createStatement();
-            resultSet = statement.executeQuery("SELECT name,description,release_date,genre,rating,duration,url FROM movies WHERE name='"+movieId+"'");
+            resultSet = statement.executeQuery("SELECT name,description,release_date,genre,rating,duration,url,ticket_price FROM movies WHERE name='"+movieId+"'");
 
             List<String> list = new ArrayList<>();
 
@@ -49,6 +49,7 @@ public class movie extends HttpServlet {
                 list.add(resultSet.getString(5));
                 list.add(resultSet.getString(6));
                 list.add(resultSet.getString(7));
+                list.add(resultSet.getString(8));
             }
 
 
