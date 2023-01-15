@@ -5,10 +5,8 @@ const Total_Tickets = document.getElementById('tc');
 const Total_Price = document.getElementById('tp');
 const BuyBtn = document.getElementById('bbtn')
 
-let TicketPrice = 350;
+let TicketPrice = document.getElementById("tct_P").value;
 let Selected_seats_Pre = document.getElementsByClassName('selected');
-
-document.getElementById('mt').innerHTML = "Harry Potter And The Deathly Hallows: Part 1";
 
 //Select A Seat
 Theater.addEventListener('click', e => {

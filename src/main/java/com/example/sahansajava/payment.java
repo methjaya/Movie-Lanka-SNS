@@ -25,7 +25,7 @@ public class payment extends HttpServlet {
         String Selected_Date = (String) session.getAttribute("Date");
         String Selected_Time = (String) session.getAttribute("Time");
         String Selected_Theatre = (String) session.getAttribute("Name");
-        String Movie_Name = "Harry Potter And The Deathly Hallows: Part 1";
+        String Movie_Name = (String) session.getAttribute("Movie_name");
 
         String Time_Date = String.format("2023-%s %s:00",Selected_Date,Selected_Time);
         List<String> Seats = new ArrayList<>();

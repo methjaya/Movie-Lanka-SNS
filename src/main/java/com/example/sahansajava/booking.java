@@ -18,7 +18,7 @@ public class booking extends HttpServlet {
         String Selected_Date = (String) session.getAttribute("Date");
         String Selected_Time = (String) session.getAttribute("Time");
         String Selected_Theatre = (String) session.getAttribute("Name");
-        String Movie_Name = "Harry Potter And The Deathly Hallows: Part 1";
+        String Movie_Name = (String) session.getAttribute("Movie_name");
 
         String Time_Date = String.format("2023-%s %s:00",Selected_Date,Selected_Time);
         List<String> Seats = new ArrayList<>();
@@ -91,7 +91,7 @@ public class booking extends HttpServlet {
                     }
 
                     // Redirect back to seat selection
-                    RequestDispatcher disptacher = request.getRequestDispatcher("seatsel.js");
+                    RequestDispatcher disptacher = request.getRequestDispatcher("seatsel.jsp");
                     disptacher.include(request,response);
                 }
             }
@@ -100,7 +100,7 @@ public class booking extends HttpServlet {
                 log("Un-available");
 
                 // Redirect back to seat selection
-                RequestDispatcher disptacher = request.getRequestDispatcher("seatsel.js");
+                RequestDispatcher disptacher = request.getRequestDispatcher("seatsel.jsp");
                 disptacher.include(request,response);
             }
         }
