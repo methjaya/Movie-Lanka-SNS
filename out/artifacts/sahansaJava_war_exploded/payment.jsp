@@ -124,7 +124,6 @@
 
                     dbcon_booking objbooking = new dbcon_booking();
 
-
                     if(session.getAttribute("Seats") != null)
                     {
                         String Seat_String = session.getAttribute("Seats").toString();
@@ -214,6 +213,6 @@
 <script src="js/payment.js?v=1.1"></script>
 
 <script src="https://www.paypal.com/sdk/js?client-id=AYIYLvmHGPyjg7520TCmTpuTYUUqkEXfk0hjhc0D-nvLVIUyAqEK2GSikEcH72lcUpEWqeTKrpApSveA&currency=USD&intent=capture&enable-funding=venmo" data-sdk-integration-source="integrationbuilder"></script>
-<script src="js/paypal.js?v=2"></Script>
+<script src="js/paypal.js?v=2.7"></Script>
 </body>
 </html>
