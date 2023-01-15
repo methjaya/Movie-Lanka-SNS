@@ -76,7 +76,17 @@
 <!-- Header End -->
 
 <!-- Movie Title Begin-->
-<div class="Movie-Title" id="mt">Error ! ! !</div>
+<%
+  String Movie_Name = (String) session.getAttribute("Movie_name");
+  if(Movie_Name != null)
+  {
+    out.print("<div class=\"Movie-Title\" id=\"mt\">"+Movie_Name+"</div>");
+  }
+  else
+  {
+    out.print("<div class=\"Movie-Title\" id=\"mt\">Error ! ! !</div>");
+  }
+%>
 <!-- Movie Title End-->
 
 <!--Keys Begin -->
@@ -111,7 +121,6 @@
     String Selected_Date = (String) session.getAttribute("Date");
     String Selected_Time = (String) session.getAttribute("Time");
     String Selected_Theatre = (String) session.getAttribute("Name");
-    String Movie_Name = "Harry Potter And The Deathly Hallows: Part 1";
 
     String Time_Date = String.format("2023-%s %s:00",Selected_Date,Selected_Time);
 
@@ -173,6 +182,20 @@
 </div>
 <!-- Buy End-->
 
+<!-- Hidden Begin -->
+<%
+  String Movie_Price = (String) session.getAttribute("Movie_price");
+  if(Movie_Price != null)
+  {
+    out.print("<input type=\"hidden\" name=\"tct_price\" id=\"tct_P\" value=\""+Movie_Price+"\">");
+  }
+  else
+  {
+    out.print("<input type=\"hidden\" name=\"tct_price\" id=\"tct_P\" value=\"1\">");
+  }
+%>
+<!-- Hidden End -->
+
 <!-- Footer Section Begin -->
 <footer class="footer-seat">
   <div class="page-up">
@@ -182,7 +205,7 @@
     <div class="row">
       <div class="col-lg-3">
         <div class="footer__logo">
-          <a href="./index.jsp"><img src="img/logo2.png" alt=""></a>
+          <a href="./index.jsp"><img src="img/logo.png" alt=""></a>
         </div>
       </div>
       <div class="col-lg-6">
@@ -215,6 +238,6 @@
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/seatsel.js"></script>
+<script src="js/seatsel.js?v=3.3"></script>
 </body>
 </html>

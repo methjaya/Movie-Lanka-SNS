@@ -113,14 +113,11 @@
         <title>Home</title>
     </head>
 <body onLoad="dspCards(<%=countL%>,<%=countT%>,<%=countN%>)">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="nav-bar">
-<div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#">News</a>
-    <a href="#">Contact</a>
-    <a href="#">About</a>
-</div>
+<div class="topnav" id="myTopnav">
+    <a href="index.jsp" class="active">Home</a>
+    <a href="contact.jsp">Contact Us</a>
 </div>
 
 
@@ -155,7 +152,7 @@
     </div>
     <div class="latest-panel" id="latest-panel-1">
         <div class="panel-title">
-            <h2>Latest Movies</h2>
+            <h2>Upcoming Movies</h2>
         </div>
         <div class="rec-card-panel">
             <div class="rec-card lrc"  id="l0" onclick="rdr('<%=LatestMDetails[0][0]%>')">

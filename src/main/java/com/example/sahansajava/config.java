@@ -43,36 +43,35 @@ public class config extends HttpServlet {
             statementL = connection.createStatement();
             statementT = connection.createStatement();
             statementN = connection.createStatement();
-            resultSetL = statementL.executeQuery("SELECT * FROM movies WHERE id IN(SELECT id FROM latest_movies)");
-            resultSetT = statementT.executeQuery("SELECT * FROM movies WHERE id IN(SELECT id FROM upcoming_movies)");
-            resultSetN = statementN.executeQuery("SELECT * FROM movies WHERE id IN(SELECT id FROM now_showing)");
+            resultSetL = statementL.executeQuery("SELECT name,YEAR(release_date),img_path FROM movies WHERE id IN(SELECT id FROM latest_movies)");
+            resultSetT = statementT.executeQuery("SELECT name,YEAR(release_date),img_path FROM movies WHERE id IN(SELECT id FROM upcoming_movies)");
+            resultSetN = statementN.executeQuery("SELECT name,YEAR(release_date),img_path FROM movies WHERE id IN(SELECT id FROM now_showing)");
+
 
             while (resultSetL.next()) {
-                LDetails[lCount][0] = resultSetL.getString(2);
-                LDetails[lCount][1] = resultSetL.getString(3);
-                LDetails[lCount][2] = resultSetL.getString(4);
+                LDetails[lCount][0] = resultSetL.getString(1);
+                LDetails[lCount][1] = resultSetL.getString(2);
+                LDetails[lCount][2] = resultSetL.getString(3);
                 lCount++;
             }
             while (resultSetT.next()) {
-                TDetails[tCount][0] = resultSetT.getString(2);
-                TDetails[tCount][1] = resultSetT.getString(3);
-                TDetails[tCount][2] = resultSetT.getString(4);
+                TDetails[tCount][0] = resultSetT.getString(1);
+                TDetails[tCount][1] = resultSetT.getString(2);
+                TDetails[tCount][2] = resultSetT.getString(3);
                 tCount++;
             }
             while (resultSetN.next()) {
-                NDetails[nCount][0] = resultSetN.getString(2);
-                NDetails[nCount][1] = resultSetN.getString(3);
-                NDetails[nCount][2] = resultSetN.getString(4);
+                NDetails[nCount][0] = resultSetN.getString(1);
+                NDetails[nCount][1] = resultSetN.getString(2);
+                NDetails[nCount][2] = resultSetN.getString(3);
                 nCount++;
             }
+
+            System.out.println(LDetails[0][0]+" "+LDetails[0][1]+" "+LDetails[0][2]);
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
 
-        // Hello
-        out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
-        out.println("</body></html>");
 
         request.setAttribute("LmDetails", LDetails);
         request.setAttribute("TmDetails", TDetails);

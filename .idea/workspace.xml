@@ -9,12 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90645b53-a754-4632-b1da-57c4be91bcb2" name="Changes" comment="SMTP Booking Confirmation - Done">
+    <list default="true" id="90645b53-a754-4632-b1da-57c4be91bcb2" name="Changes" comment="Connected_Pages - Done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/WEB-INF/classes/com/example/sahansajava/booking.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/WEB-INF/classes/com/example/sahansajava/booking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/WEB-INF/classes/com/example/sahansajava/config.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/WEB-INF/classes/com/example/sahansajava/config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/WEB-INF/classes/com/example/sahansajava/movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/WEB-INF/classes/com/example/sahansajava/movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/WEB-INF/classes/com/example/sahansajava/payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/WEB-INF/classes/com/example/sahansajava/payment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/contact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/contact.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/css/navtest.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/css/navtest.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/js/payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/js/payment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/js/seatsel.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/js/seatsel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/js/tselector.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/js/tselector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/movie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/movie.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/payment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/payment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/seatsel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/seatsel.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/tselector.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/tselector.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/navtest.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/navtest.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/movie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/movie.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +70,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Other/Downloads/JRE/java-json.jar",
+    "last_opened_file_path": "C:/Program Files (x86)/apache-tomcat-10.0.27-windows-x64/apache-tomcat-10.0.27/lib/jakarta.mail-2.0.1.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Global Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.3321839"
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3321839",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
@@ -75,7 +91,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="7396af51-b45a-45e6-bcd6-8abacbdbf19e" />
+        <option name="BASE_DIRECTORY_NAME" value="5c92c962-e33b-4389-9c8a-e338d7f491ce" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -83,7 +99,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="55997" />
+        <option name="DEBUG_PORT" value="60507" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -164,6 +180,8 @@
       <workItem from="1673758709383" duration="476000" />
       <workItem from="1673759200597" duration="10651000" />
       <workItem from="1673783335658" duration="2200000" />
+      <workItem from="1673786113510" duration="644000" />
+      <workItem from="1673786776553" duration="9811000" />
     </task>
     <task id="LOCAL-00001" summary="Connected_Pages">
       <created>1673766429008</created>
@@ -186,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673784487777</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Connected_Pages - Done">
+      <created>1673785847967</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673785847967</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,8 +230,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Connected_Pages" />
-    <MESSAGE value="Connected_Pages - Done" />
     <MESSAGE value="SMTP Booking Confirmation - Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="SMTP Booking Confirmation - Done" />
+    <MESSAGE value="Connected_Pages - Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connected_Pages - Done" />
   </component>
 </project>

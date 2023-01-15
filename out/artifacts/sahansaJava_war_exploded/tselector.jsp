@@ -81,7 +81,17 @@
 <!-- Header End -->
 
 <!-- Movie Title Begin-->
-<div class="Movie-Title" id="mt">Error ! ! !</div>
+<%
+    String Movie_Name = (String) session.getAttribute("Movie_name");
+    if(Movie_Name != null)
+    {
+        out.print("<div class=\"Movie-Title\" id=\"mt\">"+Movie_Name+"</div>");
+    }
+    else
+    {
+        out.print("<div class=\"Movie-Title\" id=\"mt\">Error ! ! !</div>");
+    }
+%>
 <!-- Movie Title End-->
 
 <!-- Select Date Begin -->
@@ -183,6 +193,6 @@
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/tselector.js"></script>
+<script src="js/tselector.js?v=1"></script>
 </body>
 </html>
