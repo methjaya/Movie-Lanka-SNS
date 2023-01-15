@@ -114,40 +114,14 @@
     </head>
 <body onLoad="dspCards(<%=countL%>,<%=countT%>,<%=countN%>)">
 
-<%--<div class="nav-bar">--%>
-<%--<header class="header-seat">--%>
-<%--    <div class="container">--%>
-<%--        <div class="row">--%>
-<%--            <div class="col-lg-2">--%>
-<%--                <div class="header__logo">--%>
-<%--                    <a href="./index.jsp">--%>
-<%--                        <img src="img/logo.png" alt="">--%>
-<%--                    </a>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--            <div class="col-lg-8">--%>
-<%--                <div class="header__nav">--%>
-<%--                    <nav class="header__menu mobile-menu">--%>
-<%--                        <ul>--%>
-<%--                            <li class="active"><a href="./index.jsp">Homepage</a></li>--%>
-
-
-<%--                            <li><a href="#">Contacts</a></li>--%>
-<%--                        </ul>--%>
-<%--                    </nav>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--            <div class="col-lg-2">--%>
-<%--                <div class="header__right">--%>
-<%--                    <a href="#" class="search-switch"><span class="icon_search"></span></a>--%>
-<%--                    <a href="./index.jsp"><span class="icon_profile"></span></a>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--        <div id="mobile-menu-wrap"></div>--%>
-<%--    </div>--%>
-<%--</header>--%>
-<%--</div>--%>
+<div class="nav-bar">
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#">News</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>
+</div>
+</div>
 
 
 <div class="home-container" id="home-container">

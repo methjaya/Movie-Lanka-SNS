@@ -114,40 +114,14 @@
     </head>
 <body onLoad="dspCards(<%=countL%>,<%=countT%>,<%=countN%>)">
 
-<%--<div class="nav-bar">--%>
-<%--<header class="header-seat">--%>
-<%--    <div class="container">--%>
-<%--        <div class="row">--%>
-<%--            <div class="col-lg-2">--%>
-<%--                <div class="header__logo">--%>
-<%--                    <a href="./index.jsp">--%>
-<%--                        <img src="img/logo.png" alt="">--%>
-<%--                    </a>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--            <div class="col-lg-8">--%>
-<%--                <div class="header__nav">--%>
-<%--                    <nav class="header__menu mobile-menu">--%>
-<%--                        <ul>--%>
-<%--                            <li class="active"><a href="./index.jsp">Homepage</a></li>--%>
-
-
-<%--                            <li><a href="#">Contacts</a></li>--%>
-<%--                        </ul>--%>
-<%--                    </nav>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--            <div class="col-lg-2">--%>
-<%--                <div class="header__right">--%>
-<%--                    <a href="#" class="search-switch"><span class="icon_search"></span></a>--%>
-<%--                    <a href="./index.jsp"><span class="icon_profile"></span></a>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--        <div id="mobile-menu-wrap"></div>--%>
-<%--    </div>--%>
-<%--</header>--%>
-<%--</div>--%>
+<div class="nav-bar">
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#">News</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>
+</div>
+</div>
 
 
 <div class="home-container" id="home-container">
@@ -187,7 +161,7 @@
             <div class="rec-card lrc"  id="l0" onclick="rdr('<%=LatestMDetails[0][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=LatestMDetails[0][2]%>;
+                            src="<%=LatestMDetails[0][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -201,7 +175,7 @@
             <div class="rec-card lrc" id="l1" onclick="rdr('<%=LatestMDetails[1][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=LatestMDetails[1][2]%>;
+                            src="<%=LatestMDetails[1][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -215,7 +189,7 @@
             <div class="rec-card lrc" id="l2" onclick="rdr('<%=LatestMDetails[2][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=LatestMDetails[2][2]%>;
+                            src="<%=LatestMDetails[2][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -229,7 +203,7 @@
             <div class="rec-card lrc" id="l3" onclick="rdr('<%=LatestMDetails[3][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=LatestMDetails[3][2]%>;
+                            src="<%=LatestMDetails[3][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -243,7 +217,7 @@
             <div class="rec-card lrc" id="l4" onclick="rdr('<%=LatestMDetails[4][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=LatestMDetails[4][2]%>;
+                            src="<%=LatestMDetails[4][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -257,7 +231,7 @@
             <div class="rec-card lrc" id="l5" onclick="rdr('<%=LatestMDetails[5][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=LatestMDetails[5][2]%>;
+                            src="<%=LatestMDetails[5][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -279,7 +253,7 @@
             <div class="rec-card trc" id="t0" onclick="rdr('<%=TMDetails[0][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=TMDetails[0][2]%>;
+                            src="<%=TMDetails[0][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -293,7 +267,7 @@
             <div class="rec-card trc" id="t1" onclick="rdr('<%=TMDetails[1][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=TMDetails[1][2]%>;
+                            src="<%=TMDetails[1][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -321,7 +295,7 @@
             <div class="rec-card trc" id="t3" onclick="rdr('<%=TMDetails[3][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=TMDetails[3][2]%>;
+                            src="<%=TMDetails[3][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -335,7 +309,7 @@
             <div class="rec-card trc" id="t4" onclick="rdr('<%=TMDetails[4][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=TMDetails[4][2]%>;
+                            src="<%=TMDetails[4][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -349,7 +323,7 @@
             <div class="rec-card trc" id="t5" onclick="rdr('<%=TMDetails[5][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=TMDetails[5][2]%>;
+                            src="<%=TMDetails[5][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -371,7 +345,7 @@
             <div class="rec-card nrc" id="n0" onclick="rdr('<%=NMDetails[0][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[0][2]%>;
+                            src="<%=NMDetails[0][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -385,7 +359,7 @@
             <div class="rec-card nrc" id="n1" onclick="rdr('<%=NMDetails[1][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[1][2]%>;
+                            src="<%=NMDetails[1][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -399,7 +373,7 @@
             <div class="rec-card nrc" id="n2" onclick="rdr('<%=NMDetails[2][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[2][2]%>;
+                            src="<%=NMDetails[2][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -413,7 +387,7 @@
             <div class="rec-card nrc" id="n3" onclick="rdr('<%=NMDetails[3][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[3][2]%>;
+                            src="<%=NMDetails[3][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -427,7 +401,7 @@
             <div class="rec-card nrc" id="n4" onclick="rdr('<%=NMDetails[4][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[4][2]%>;
+                            src="<%=NMDetails[4][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -441,7 +415,7 @@
             <div class="rec-card nrc" id="n5" onclick="rdr('<%=NMDetails[5][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[5][2]%>;
+                            src="<%=NMDetails[5][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -458,7 +432,7 @@
             <div class="rec-card nrc" id="n6" onclick="rdr('<%=NMDetails[6][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[6][2]%>;
+                            src="<%=NMDetails[6][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -472,7 +446,7 @@
             <div class="rec-card nrc" id="n7" onclick="rdr('<%=NMDetails[7][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[7][2]%>;
+                            src="<%=NMDetails[7][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -486,7 +460,7 @@
             <div class="rec-card nrc" id="n8" onclick="rdr('<%=NMDetails[8][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[8][2]%>;
+                            src="<%=NMDetails[8][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -500,7 +474,7 @@
             <div class="rec-card nrc" id="n9" onclick="rdr('<%=NMDetails[9][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[9][2]%>;
+                            src="<%=NMDetails[9][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -514,7 +488,7 @@
             <div class="rec-card nrc" id="n10" onclick="rdr('<%=NMDetails[10][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[10][2]%>;
+                            src="<%=NMDetails[10][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -528,7 +502,7 @@
             <div class="rec-card nrc" id="n11" onclick="rdr('<%=NMDetails[11][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[11][2]%>;
+                            src="<%=NMDetails[11][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -545,7 +519,7 @@
             <div class="rec-card nrc" id="n12" onclick="rdr('<%=NMDetails[12][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[12][2]%>;
+                            src="<%=NMDetails[12][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -559,7 +533,7 @@
             <div class="rec-card nrc" id="n13" onclick="rdr('<%=NMDetails[13][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[13][2]%>;
+                            src="<%=NMDetails[13][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -573,7 +547,7 @@
             <div class="rec-card nrc" id="n14" onclick="rdr('<%=NMDetails[14][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[14][2]%>;
+                            src="<%=NMDetails[14][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -587,7 +561,7 @@
             <div class="rec-card nrc" id="n15" onclick="rdr('<%=NMDetails[15][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[15][2]%>;
+                            src="<%=NMDetails[15][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -601,7 +575,7 @@
             <div class="rec-card nrc" id="n16" onclick="rdr('<%=NMDetails[16][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[16][2]%>;
+                            src="<%=NMDetails[16][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
@@ -615,7 +589,7 @@
             <div class="rec-card nrc" id="n17" onclick="rdr('<%=NMDetails[17][0]%>')">
                 <div class="rec-card-img">
                     <img
-                            src=<%=NMDetails[17][2]%>;
+                            src="<%=NMDetails[17][2]%>"
                             alt="Interstellar"
                             class="latest-panel-img"
                     />
