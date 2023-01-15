@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="css/plyr.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/seatsel.css" type="text/css">
-  <link rel="stylesheet" href="css/final.css" type="text/css">
+  <link rel="stylesheet" href="css/final.css?v=1.1" type="text/css">
 
 
 </head>
@@ -86,6 +86,7 @@
   <div class="change-mind" id="chngeMD">
     <span id="chnge_mindID">(Changed your mind ?)</span>
   </div>
+
 </div>
 
 

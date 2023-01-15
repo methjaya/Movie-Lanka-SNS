@@ -28,9 +28,6 @@ function IF_Cancelled()
     // Delete all the added records
     $.ajax({
         type: "POST",
-        url: "seats_session",
-        data: { "seats": Seats_Final }
+        url: "remove_records"
     });
-
-    // Email the user
 }
