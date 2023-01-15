@@ -31,6 +31,7 @@ public class payment extends HttpServlet {
         List<String> Seats = new ArrayList<>();
 
         dbcon_booking objbooking = new dbcon_booking();
+        SMTP_Gmail send_mail = new SMTP_Gmail();
 
         boolean MainCheck = false;
         boolean PermLock = true;
@@ -47,6 +48,9 @@ public class payment extends HttpServlet {
         {
             log("Seats Session Lost - booking");
         }
+
+        String Error_Body = String.format("Check if these seats are removed immediately ! !.\n\n" +
+                "Seats : %s",String.join(", ",Seats));
 
         if(Payment_Status == 0 && MainCheck)
         {
@@ -71,21 +75,21 @@ public class payment extends HttpServlet {
                 }
 
                 // Send a mail to the developer
+                send_mail.SendGMail(U_Email,"Take immediate action !",Error_Body);
+
             }
             else
             {
                 // Success //
 
                 //Send Mail//
-                SMTP_Gmail send_mail = new SMTP_Gmail();
-
                 String Body = String.format("Name : %s\nNIC : %s\nInvoice No : %s\nTheatre : %s\nTime and Date : %s" +
                         "\n\nCongratulations !, You have successfully booked %d ticket(s) for the movie : %s." +
                         "\nSeat(s) : %s",
                         Fname + " " + Lname,
                         NIC,
                         Invoice_no,
-                        "ABC",
+                        Selected_Theatre,
                         Time_Date,
                         Seats.size(),
                         Movie_Name,
@@ -109,8 +113,9 @@ public class payment extends HttpServlet {
             }
 
             // If fails Send a mail to the developer
+            send_mail.SendGMail(U_Email,"Take immediate action !",Error_Body);
 
-            RequestDispatcher dispatcher = request.getRequestDispatcher("seatsel.js");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("seatsel.jsp");
             dispatcher.forward(request, response);
         }
 
@@ -125,9 +130,11 @@ public class payment extends HttpServlet {
             }
 
             // If fails Send a mail to the developer.
+            send_mail.SendGMail(U_Email,"Take immediate action !",Error_Body);
 
-            RequestDispatcher dispatcher = request.getRequestDispatcher("seatsel.js");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("seatsel.jsp");
             dispatcher.forward(request, response);
         }
     }
+
 }

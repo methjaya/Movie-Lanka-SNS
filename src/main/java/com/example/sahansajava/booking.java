@@ -12,7 +12,7 @@ import java.io.IOException;
 public class booking extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //Get the Seat Numbers
+
         HttpSession session = request.getSession();
 
         String Selected_Date = (String) session.getAttribute("Date");

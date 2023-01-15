@@ -1,4 +1,16 @@
 let check = 0;
+let Price = document.getElementById("mprice").innerHTML;
+let Total_Price = parseInt(Price);
+
+let D_Price;
+
+if(Total_Price != null && Total_Price !== 0){
+    D_Price = (Total_Price / 365).toFixed(2).toString();
+}
+else
+{
+    D_Price = "1";
+}
 
 const paypalButtonsComponent = paypal.Buttons({
     // optional styling for buttons
@@ -18,7 +30,7 @@ const paypalButtonsComponent = paypal.Buttons({
             purchase_units: [
                 {
                     amount: {
-                        value: "10.00"
+                        value: D_Price
                     }
                 }
             ]
