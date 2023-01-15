@@ -68,22 +68,7 @@
 </header>
 <!-- Header End -->
 
-<!-- Breadcrumb Begin -->
-<div class="breadcrumb-option">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="breadcrumb__links">
-          <a href="./index.jsp"><i class="fa fa-home"></i> Home</a>
-          <a href="./categories.html">Categories</a>
-          <a href="#">Fantasy</a>
-          <span>Harry Potter And The Deathly Hallows: Part 1</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Breadcrumb End -->
+
 
 <!-- Anime Section Begin -->
 <section class="anime-details spad">
