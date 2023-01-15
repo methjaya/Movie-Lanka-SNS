@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: nethu
+  User: Sahansa
   Date: 1/2/2023
   Time: 10:00 AM
   To change this template use File | Settings | File Templates.
@@ -69,15 +69,7 @@
           <nav class="header__menu mobile-menu">
             <ul>
               <li class="active"><a href="./index.jsp">Homepage</a></li>
-              <li><a href="./categories.html">Categories <span class="arrow_carrot-down"></span></a>
-                <ul class="dropdown">
-                  <li><a href="./category1.html">Category 1</a></li>
-                  <li><a href="./category2.html">Category 2</a></li>
-                  <li><a href="./category3.html">Category 3</a></li>
-                  <li><a href="./category4.html">Category 4</a></li>
-                  <li><a href="./category5.html">Category 5</a></li>
-                </ul>
-              </li>
+
 
               <li><a href="#">Contacts</a></li>
             </ul>
@@ -123,6 +115,11 @@
           <iframe width="1080" height="600" id="i-frame-video"
                   src="https://www.youtube.com/embed/fFGS4zZWGoA">
           </iframe>
+          <!--  <video id="player" playsinline controls data-poster="./videos/poster.jpg">
+              <source src="https://www.youtube.com/watch?v=VyHV0BRtdxo" type="video/mp4" />
+              <!-- Captions are optional
+              <track kind="captions" label="English captions" src="#" srclang="en" default />
+            </video>-->
         </div>
 
 
@@ -235,7 +232,7 @@
                 <div class="footer__nav">
                   <ul>
                     <li class="active"><a href="./index.jsp">Homepage</a></li>
-                    <li><a href="./categories.html">Categories</a></li>
+
 
                     <li><a href="#">Contacts</a></li>
                   </ul>
