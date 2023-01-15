@@ -15,12 +15,15 @@ public class tselect_dchange extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HttpSession session = request.getSession();
+        String Movie_Name = (String) session.getAttribute("Movie_name");
+
         dbcon_booking objbooking = new dbcon_booking();
         String Selected_Date = request.getParameter("selectedDate");
         String Formatted_Date = "2023-"+Selected_Date;
 
         ConcurrentMap<String, List<String>> Theatre_Details = new ConcurrentHashMap<>();
-        Theatre_Details =  objbooking.Load_Times(Formatted_Date);
+        Theatre_Details =  objbooking.Load_Times(Formatted_Date, Movie_Name);
         StringBuilder Time_Cont = new StringBuilder();
 
         for (Map.Entry<String, List<String>> theatre : Theatre_Details.entrySet()) {

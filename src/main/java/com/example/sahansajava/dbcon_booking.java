@@ -14,7 +14,7 @@ public class dbcon_booking {
     ResultSet rs = null;
 
 
-    public List<String> Load_Dates(){
+    public List<String> Load_Dates(String Movie_Name){
         List<String> Available_Dates = new ArrayList<>();
         try
         {
@@ -22,7 +22,7 @@ public class dbcon_booking {
             con = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/testmdb","root","");
             st = con.createStatement();
 
-            String Query = "SELECT dates FROM theatre_timeschedule WHERE movie_name = 'movie1'";
+            String Query = "SELECT dates FROM theatre_timeschedule WHERE movie_name = '"+Movie_Name+"'";
 
             rs = st.executeQuery(Query);
 
@@ -43,7 +43,7 @@ public class dbcon_booking {
         return Available_Dates;
     }
 
-    public ConcurrentMap<String, List<String>> Load_Times(String Selected_Date){
+    public ConcurrentMap<String, List<String>> Load_Times(String Selected_Date, String Movie_Name){
 
         ConcurrentMap<String, List<String>> TD = new ConcurrentHashMap<>();
 
@@ -53,7 +53,7 @@ public class dbcon_booking {
             con = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/testmdb","root","");
             st = con.createStatement();
 
-            String Query = "SELECT theatre_name,time FROM theatre_timeschedule WHERE movie_name = 'movie1' AND dates = '"+Selected_Date+"'";
+            String Query = "SELECT theatre_name,time FROM theatre_timeschedule WHERE movie_name = '"+Movie_Name+"' AND dates = '"+Selected_Date+"'";
 
             rs = st.executeQuery(Query);
 
@@ -108,7 +108,7 @@ public class dbcon_booking {
             con = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/testmdb","root","");
             st = con.createStatement();
 
-            String Query = "SELECT seat_no,lock_unlock FROM `"+T_Name+"_seats` WHERE movie = '"+M_Name+"' AND timedate = '"+T_D+"'";
+            String Query = "SELECT seat_no,lock_unlock FROM `"+T_Name.toLowerCase()+"_seats` WHERE movie = '"+M_Name+"' AND timedate = '"+T_D+"'";
 
 
             rs = st.executeQuery(Query);
@@ -135,7 +135,7 @@ public class dbcon_booking {
             con = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/testmdb","root","");
             st = con.createStatement();
 
-            String Query = "SELECT lock_unlock FROM "+Theatre_Name+"_seats WHERE movie = '"+Movie_Name+"' AND timedate = '"+T_D+"' AND seat_no = '"+S_N+"'";
+            String Query = "SELECT lock_unlock FROM "+Theatre_Name.toLowerCase()+"_seats WHERE movie = '"+Movie_Name+"' AND timedate = '"+T_D+"' AND seat_no = '"+S_N+"'";
 
             rs = st.executeQuery(Query);
 
@@ -161,7 +161,7 @@ public class dbcon_booking {
             con = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/testmdb","root","");
             st = con.createStatement();
 
-            String Query = "INSERT INTO "+Theatre_Name+"_seats(seat_no,movie,timedate,lock_unlock) VALUES('"+S_N+"','"+Movie_Name+"','"+T_D+"',0)";
+            String Query = "INSERT INTO "+Theatre_Name.toLowerCase()+"_seats(seat_no,movie,timedate,lock_unlock) VALUES('"+S_N+"','"+Movie_Name+"','"+T_D+"',0)";
             st.executeUpdate(Query);
         }
         catch (Exception e)
@@ -182,7 +182,7 @@ public class dbcon_booking {
             con = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/testmdb","root","");
             st = con.createStatement();
 
-            String Query = "DELETE FROM "+Theatre_Name+"_seats WHERE seat_no = '"+S_N+"' AND movie = '"+Movie_Name+"' AND timedate = '"+T_D+"'";
+            String Query = "DELETE FROM "+Theatre_Name.toLowerCase()+"_seats WHERE seat_no = '"+S_N+"' AND movie = '"+Movie_Name+"' AND timedate = '"+T_D+"'";
             st.executeUpdate(Query);
         }
         catch (Exception e)
@@ -203,7 +203,7 @@ public class dbcon_booking {
             con = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/testmdb","root","");
             st = con.createStatement();
 
-            String Query = "UPDATE "+Theatre_Name+"_seats SET lock_unlock = 1 , fname = '"+F_name+"' , lname = '"+L_name+"' , nic = '"+NIC_N+"' , receipt_no = "+Receipt_N+" WHERE seat_no = '"+S_N+"' AND movie = '"+Movie_Name+"' AND timedate = '"+T_D+"'";
+            String Query = "UPDATE "+Theatre_Name.toLowerCase()+"_seats SET lock_unlock = 1 , fname = '"+F_name+"' , lname = '"+L_name+"' , nic = '"+NIC_N+"' , receipt_no = "+Receipt_N+" WHERE seat_no = '"+S_N+"' AND movie = '"+Movie_Name+"' AND timedate = '"+T_D+"'";
             st.executeUpdate(Query);
         }
         catch (Exception e)
