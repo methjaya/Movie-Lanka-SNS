@@ -9,21 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90645b53-a754-4632-b1da-57c4be91bcb2" name="Changes" comment="Connected_Pages">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_12_2023_1_26_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_12_2023_1_26_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2023_12_50_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2023_12_50_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2023_1_12_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2023_1_12_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2023_1_52_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2023_1_52_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_15_2023_10_23_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_15_2023_10_23_AM__Changes_.xml" afterDir="false" />
+    <list default="true" id="90645b53-a754-4632-b1da-57c4be91bcb2" name="Changes" comment="Connected_Pages - Done">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_15_2023_10_23_AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/booking.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/payment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/seatsel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/seatsel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/payment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/payment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/seatsel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/seatsel.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tselector.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tselector.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +157,8 @@
       <option name="presentableId" value="Default" />
       <updated>1673758706749</updated>
       <workItem from="1673758709383" duration="476000" />
-      <workItem from="1673759200597" duration="10448000" />
+      <workItem from="1673759200597" duration="10651000" />
+      <workItem from="1673783335658" duration="1109000" />
     </task>
     <task id="LOCAL-00001" summary="Connected_Pages">
       <created>1673766429008</created>
@@ -177,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673766429008</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Connected_Pages - Done">
+      <created>1673769839595</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673769839595</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +193,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Connected_Pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connected_Pages" />
+    <MESSAGE value="Connected_Pages - Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connected_Pages - Done" />
   </component>
 </project>

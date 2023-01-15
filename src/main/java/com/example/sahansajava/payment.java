@@ -74,7 +74,25 @@ public class payment extends HttpServlet {
             }
             else
             {
-                // Successfully
+                // Success //
+
+                //Send Mail//
+                SMTP_Gmail send_mail = new SMTP_Gmail();
+
+                String Body = String.format("Name : %s\nNIC : %s\nInvoice No : %s\nTheatre : %s\nTime and Date : %s" +
+                        "\n\nCongratulations !, You have successfully booked %d ticket(s) for the movie : %s." +
+                        "\nSeat(s) : %s",
+                        Fname + " " + Lname,
+                        NIC,
+                        Invoice_no,
+                        "ABC",
+                        Time_Date,
+                        Seats.size(),
+                        Movie_Name,
+                        String.join(", ",Seats));
+
+                send_mail.SendGMail(U_Email,"Booking Confirmation",Body);
+
                 RequestDispatcher dispatcher = request.getRequestDispatcher("final.jsp");
                 dispatcher.forward(request, response);
             }
