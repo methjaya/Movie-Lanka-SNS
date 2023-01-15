@@ -126,17 +126,17 @@
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <div class="crsl-img-container"><img class="crl-img" src="img/desktop-1600x900.png" style="width:100%"></div>
+                <div class="crsl-img-container"><img class="crl-img" src="img/1.jpg" style="width:100%"></div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <div class="crsl-img-container"><img class="crl-img" src="img/71LNVGVpWYL.jpg" style="width:100%"></div>
+                <div class="crsl-img-container"><img class="crl-img" src="img/2.jpg" style="width:100%"></div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <div class="crsl-img-container"><img class="crl-img" src="img/tRNlZbgNCNOpLpbPEz5L8G8A0JN.jpg" style="width:100%"></div>
+                <div class="crsl-img-container"><img class="crl-img" src="img/3.jpg" style="width:100%"></div>
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -152,7 +152,7 @@
     </div>
     <div class="latest-panel" id="latest-panel-1">
         <div class="panel-title">
-            <h2>Upcoming Movies</h2>
+            <h2>Latest Movies</h2>
         </div>
         <div class="rec-card-panel">
             <div class="rec-card lrc"  id="l0" onclick="rdr('<%=LatestMDetails[0][0]%>')">
@@ -244,7 +244,7 @@
 
     <div class="trending-panel" id="trending-panel-1">
         <div class="panel-title">
-            <h2>Trending Movies</h2>
+            <h2>Upcoming Movies</h2>
         </div>
         <div class="rec-card-panel">
             <div class="rec-card trc" id="t0" onclick="rdr('<%=TMDetails[0][0]%>')">

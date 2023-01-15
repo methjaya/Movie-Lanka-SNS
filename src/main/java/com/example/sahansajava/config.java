@@ -43,7 +43,7 @@ public class config extends HttpServlet {
             statementL = connection.createStatement();
             statementT = connection.createStatement();
             statementN = connection.createStatement();
-            resultSetL = statementL.executeQuery("SELECT name,YEAR(release_date),img_path FROM movies WHERE id IN(SELECT id FROM latest_movies)");
+            resultSetL = statementL.executeQuery("SELECT name,YEAR(release_date),img_path FROM movies WHERE id IN(SELECT id FROM latest_movies ) ORDER BY release_date DESC");
             resultSetT = statementT.executeQuery("SELECT name,YEAR(release_date),img_path FROM movies WHERE id IN(SELECT id FROM upcoming_movies)");
             resultSetN = statementN.executeQuery("SELECT name,YEAR(release_date),img_path FROM movies WHERE id IN(SELECT id FROM now_showing)");
 
