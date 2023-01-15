@@ -25,3 +25,9 @@
     width: 200px;
     margin-bottom: 2%;
 }
+
+.change-mind{
+    color: red;
+    cursor: pointer;
+    user-select: none;
+}

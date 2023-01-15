@@ -214,4 +214,23 @@ public class dbcon_booking {
 
         return true;
     }
+
+    public boolean Cancel_Booking(String Invoice_Num, String Theatre_Name){
+        try
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+            con = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/testmdb","root","");
+            st = con.createStatement();
+
+            String Query = "DELETE FROM "+Theatre_Name.toLowerCase()+"_seats WHERE receipt_no = '"+Invoice_Num+"'";
+            st.executeUpdate(Query);
+        }
+        catch (Exception e)
+        {
+            out.println(e);
+            return false;
+        }
+
+        return true;
+    }
 }

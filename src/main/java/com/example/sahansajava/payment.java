@@ -28,6 +28,9 @@ public class payment extends HttpServlet {
         String Movie_Name = (String) session.getAttribute("Movie_name");
 
         String Time_Date = String.format("2023-%s %s:00",Selected_Date,Selected_Time);
+
+        session.setAttribute("Invoice_Number",Invoice_no);
+
         List<String> Seats = new ArrayList<>();
 
         dbcon_booking objbooking = new dbcon_booking();
@@ -75,7 +78,7 @@ public class payment extends HttpServlet {
                 }
 
                 // Send a mail to the developer
-                send_mail.SendGMail(U_Email,"Take immediate action !",Error_Body);
+                send_mail.SendGMail("nethun223@gmail.com","Take immediate action !",Error_Body);
 
             }
             else
@@ -113,7 +116,7 @@ public class payment extends HttpServlet {
             }
 
             // If fails Send a mail to the developer
-            send_mail.SendGMail(U_Email,"Take immediate action !",Error_Body);
+            send_mail.SendGMail("nethun223@gmail.com","Take immediate action !",Error_Body);
 
             RequestDispatcher dispatcher = request.getRequestDispatcher("seatsel.jsp");
             dispatcher.forward(request, response);
@@ -130,7 +133,7 @@ public class payment extends HttpServlet {
             }
 
             // If fails Send a mail to the developer.
-            send_mail.SendGMail(U_Email,"Take immediate action !",Error_Body);
+            send_mail.SendGMail("nethun223@gmail.com","Take immediate action !",Error_Body);
 
             RequestDispatcher dispatcher = request.getRequestDispatcher("seatsel.jsp");
             dispatcher.forward(request, response);
