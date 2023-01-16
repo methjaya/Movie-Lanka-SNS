@@ -98,10 +98,18 @@ public class payment extends HttpServlet {
                         Movie_Name,
                         String.join(", ",Seats));
 
-                send_mail.SendGMail(U_Email,"Booking Confirmation",Body);
+                try
+                {
+                    send_mail.SendGMail(U_Email,"Booking Confirmation",Body);
 
-                RequestDispatcher dispatcher = request.getRequestDispatcher("final.jsp");
-                dispatcher.forward(request, response);
+                    RequestDispatcher dispatcher = request.getRequestDispatcher("final.jsp");
+                    dispatcher.forward(request, response);
+                }
+                catch (Exception ex)
+                {
+                    log(String.valueOf(ex));
+                }
+
             }
         }
 

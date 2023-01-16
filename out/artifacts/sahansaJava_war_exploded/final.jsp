@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <<html lang="zxx">>
 
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="css/plyr.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/seatsel.css" type="text/css">
-  <link rel="stylesheet" href="css/final.css?v=1.1" type="text/css">
+  <link rel="stylesheet" href="css/final.css?v=1.2" type="text/css">
 
 
 </head>
@@ -89,7 +89,6 @@
 
 </div>
 
-
 <!-- Footer Section Begin -->
 <footer class="footer-seat">
   <div class="page-up">
@@ -114,7 +113,7 @@
       </div>
       <div class="col-lg-3">
         <p>
-          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="fa fa-heart" aria-hidden="true"></i> by SNS Developers
+          Copyright &copy;<script>document.write(new Date().getFullYear().toString());</script> All rights reserved |  <i class="fa fa-heart" aria-hidden="true"></i> by SNS Developers
         </p>
 
       </div>

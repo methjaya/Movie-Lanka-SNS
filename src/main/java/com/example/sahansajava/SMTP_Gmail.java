@@ -29,7 +29,7 @@ public class SMTP_Gmail {
         try {
 
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("rsmtmanagement@gmail.com"));
+            message.setFrom(new InternetAddress("snsmovietickets@gmail.com"));
             message.setRecipients(
                     Message.RecipientType.TO,
                     InternetAddress.parse(To)
