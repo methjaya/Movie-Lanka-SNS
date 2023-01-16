@@ -247,12 +247,19 @@
         </div>
     </div>
 
+    <script>
+        function mucR(sId){
+            sessionStorage.setItem("id",sId);
+            window.location.href = "movieUpcoming.jsp";
+        }
+    </script>
+
     <div class="trending-panel" id="trending-panel-1">
         <div class="panel-title">
             <h2>Upcoming Movies</h2>
         </div>
         <div class="rec-card-panel">
-            <div class="rec-card trc" id="t0" onclick="rdr('<%=TMDetails[0][0]%>')">
+            <div class="rec-card trc" id="t0" onclick="mucR('<%=TMDetails[0][0]%>')">
                 <div class="rec-card-img">
                     <img
                             src="<%=TMDetails[0][2]%>"
@@ -266,7 +273,7 @@
                 </div>
             </div>
 
-            <div class="rec-card trc" id="t1" onclick="rdr('<%=TMDetails[1][0]%>')">
+            <div class="rec-card trc" id="t1" onclick="mucR('<%=TMDetails[1][0]%>')">
                 <div class="rec-card-img">
                     <img
                             src="<%=TMDetails[1][2]%>"
@@ -338,6 +345,9 @@
 
         </div>
     </div>
+
+
+
 
     <div class="now-showing-panel" id="now-showing-panel-1">
         <div class="panel-title">

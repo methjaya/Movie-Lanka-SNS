@@ -43,6 +43,11 @@ function rdr(sId){
   window.location.href = "movie.jsp";
 }
 
+// function mucR(sId){
+//   sessionStorage.setItem("id",sId);
+//   window.location.href = "movieUpcoming.jsp";
+// }
+
 
 
 function x(number){

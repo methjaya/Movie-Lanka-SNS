@@ -9,10 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aeba8be1-5170-47ea-a306-eb8f79f653c9" name="Changes" comment="Contact Us - SMTP">
+    <list default="true" id="aeba8be1-5170-47ea-a306-eb8f79f653c9" name="Changes" comment="6.29">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/js/seatsel.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/js/seatsel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/navtest.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/navtest.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673828114923</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="6.29">
+      <created>1673830806691</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673830806691</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +241,7 @@
     <MESSAGE value="Ticket Cancel bug fix" />
     <MESSAGE value="Bug Fix - SMTP" />
     <MESSAGE value="Contact Us - SMTP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Contact Us - SMTP" />
+    <MESSAGE value="6.29" />
+    <option name="LAST_COMMIT_MESSAGE" value="6.29" />
   </component>
 </project>
