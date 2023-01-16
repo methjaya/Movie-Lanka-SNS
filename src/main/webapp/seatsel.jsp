@@ -134,7 +134,6 @@
 
     int Total_Seats = Integer.parseInt(Seat_Layout.get("Seats"));
     int Seats_Per_Row = Integer.parseInt(Seat_Layout.get("prow"));
-    int Divider = Integer.parseInt(Seat_Layout.get("Divide"));
 
     for(int n = 1; n <= (Total_Seats / Seats_Per_Row); n++)
     {
