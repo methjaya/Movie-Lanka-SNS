@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <<html lang="zxx">>
 
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="css/plyr.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/seatsel.css" type="text/css">
-  <link rel="stylesheet" href="css/final.css?v=1.2" type="text/css">
+  <link rel="stylesheet" href="css/final.css" type="text/css">
 
 
 </head>
@@ -80,14 +80,10 @@
 
 
 <div class="Final_Greating" id="FG">
-  <img src="./img/popcorn.png" class="img_pop" alt="Popcorn.jpg">
-  <p class="greetP">You have Successfully confirmed the purchase !.<br>You'll receive a confirmation email shortly.</p>
-
-  <div class="change-mind" id="chngeMD">
-    <span id="chnge_mindID">(Changed your mind ?)</span>
-  </div>
-
+  <img src="./img/popcorn.png" class="img_pop">
+  <p class="greetP">You have Successfully confirmed the purchase !.<br>You'll recieve a confirmation email shortly.</p>
 </div>
+
 
 <!-- Footer Section Begin -->
 <footer class="footer-seat">
@@ -113,7 +109,7 @@
       </div>
       <div class="col-lg-3">
         <p>
-          Copyright &copy;<script>document.write(new Date().getFullYear().toString());</script> All rights reserved |  <i class="fa fa-heart" aria-hidden="true"></i> by SNS Developers
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="fa fa-heart" aria-hidden="true"></i> by SNS Developers
         </p>
 
       </div>
@@ -131,7 +127,5 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/seatsel.js"></script>
-<script src="js/final.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </body>
 </html>

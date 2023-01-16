@@ -45,7 +45,7 @@ Buy_Cont.addEventListener('click',e => {
     if (e.target.classList.contains('buybtn')) {
         let Selected_seats_Final = [];
 
-        for (let i = 0; i < Selected_seats_Pre.length; i++) {
+        for (let i = 1; i < Selected_seats_Pre.length; i++) {
             Selected_seats_Final[i-1] = Selected_seats_Pre[i].innerHTML;
         }
 

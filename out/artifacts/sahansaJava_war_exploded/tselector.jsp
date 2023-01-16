@@ -126,7 +126,7 @@
     <div class="ttselector-body" id="time-cont">
         <%
             ConcurrentMap<String, List<String>> Theatre_Details = new ConcurrentHashMap<>();
-            Theatre_Details =  objbooking.Load_Times(SDate,Movie_Name);
+            Theatre_Details =  objbooking.Load_Times(SDate, Movie_Name);
 
             for (Map.Entry<String, List<String>> theatre : Theatre_Details.entrySet()) {
                 String name = theatre.getKey();

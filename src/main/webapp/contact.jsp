@@ -83,7 +83,7 @@
             <div class="col-lg-8 mx-auto">
                 <div class="bg-white rounded text-center p-5 shadow-down">
                     <h4 class="mb-80">Contact Form</h4>
-                    <form action="https://formsubmit.co/methjaya252@gmail.com" method="post" class="row">
+                    <form action="contact_us" method="post" class="row">
                         <div class="col-md-6">
                             <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4" required>
                         </div>

@@ -5,7 +5,7 @@
 
 <html>
 <head>
-    <title>Title</title>
+    <title>ABC Cinema</title>
     <%--    <%--%>
     <%--        String[][] y=(String[][]) request.getAttribute("mDetails");--%>
     <%--        int count=Integer.parseInt(request.getAttribute("LatestPanelCount").toString());--%>

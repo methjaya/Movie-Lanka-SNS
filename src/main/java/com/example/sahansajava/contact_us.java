@@ -21,6 +21,8 @@ public class contact_us extends HttpServlet {
         try
         {
             sendmail.SendGMail("voice.meth@gmail.com","Customer FeedBack !",Body);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+            dispatcher.forward(request, response);
         }
         catch (Exception ex)
         {
