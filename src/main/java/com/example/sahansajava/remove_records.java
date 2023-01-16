@@ -14,6 +14,7 @@ public class remove_records extends HttpServlet {
 
         String Selected_Theatre = (String) session.getAttribute("Name");
         String Invoice_No = (String) session.getAttribute("Invoice_Number");
+        String U_Email = (String) session.getAttribute("usr_email");
 
         dbcon_booking objbooking = new dbcon_booking();
         SMTP_Gmail sendMail = new SMTP_Gmail();
@@ -22,6 +23,9 @@ public class remove_records extends HttpServlet {
         {
             // Clear Session
             session.invalidate();
+
+            //Send a mail to the user
+            sendMail.SendGMail(U_Email,"Cancellation complete !","Your booking has been cancelled !");
 
             // Redirect to the home page
             RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");

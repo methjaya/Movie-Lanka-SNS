@@ -131,7 +131,7 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/seatsel.js"></script>
-<script src="js/final.js"></script>
+<script src="js/final.js?v=1.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </body>
 </html>

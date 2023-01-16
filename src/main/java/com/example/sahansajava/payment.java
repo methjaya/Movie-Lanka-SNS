@@ -30,6 +30,7 @@ public class payment extends HttpServlet {
         String Time_Date = String.format("2023-%s %s:00",Selected_Date,Selected_Time);
 
         session.setAttribute("Invoice_Number",Invoice_no);
+        session.setAttribute("usr_email",U_Email);
 
         List<String> Seats = new ArrayList<>();
 
