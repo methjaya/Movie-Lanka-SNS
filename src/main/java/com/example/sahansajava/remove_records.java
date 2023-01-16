@@ -23,8 +23,6 @@ public class remove_records extends HttpServlet {
             // Clear Session
             session.invalidate();
 
-            // Email User
-
             // Redirect to the home page
             RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
             dispatcher.forward(request, response);
@@ -33,8 +31,6 @@ public class remove_records extends HttpServlet {
         {
             // Send Mail
             sendMail.SendGMail("nethun223@gmail.com","Take immediate action !","Remove  : "+Invoice_No+"");
-
-            // Email User
 
             // Clear Session
             session.invalidate();

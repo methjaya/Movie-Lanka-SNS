@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="css/plyr.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/seatsel.css" type="text/css">
-  <link rel="stylesheet" href="css/final.css" type="text/css">
+  <link rel="stylesheet" href="css/final.css?v=1.1" type="text/css">
 
 
 </head>
@@ -82,6 +82,10 @@
 <div class="Final_Greating" id="FG">
   <img src="./img/popcorn.png" class="img_pop">
   <p class="greetP">You have Successfully confirmed the purchase !.<br>You'll recieve a confirmation email shortly.</p>
+
+  <div class="change-mind" id="chngeMD">
+    <span id="chnge_mindID">(Changed your mind ?)</span>
+  </div>
 </div>
 
 
@@ -127,5 +131,7 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/seatsel.js"></script>
+<script src="js/final.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </body>
 </html>
