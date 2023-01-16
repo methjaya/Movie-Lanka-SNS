@@ -22,12 +22,7 @@
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
     <link rel="stylesheet" href="css/plyr.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -43,7 +38,7 @@
         <div class="row">
             <div class="col-lg-2">
                 <div class="header__logo">
-                    <a href="./index.html">
+                    <a href="./index.jsp">
                         <img src="img/logo.png" alt="">
                     </a>
                 </div>
@@ -52,7 +47,7 @@
                 <div class="header__nav">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Homepage</a></li>
+                            <li class="active"><a href="./index.jsp">Homepage</a></li>
 
 
                             <li><a href="#">Contacts</a></li>
@@ -63,7 +58,7 @@
             <div class="col-lg-2">
                 <div class="header__right">
                     <a href="#" class="search-switch"><span class="icon_search"></span></a>
-                    <a href="./login.html"><span class="icon_profile"></span></a>
+                    <a href="./index.jsp"><span class="icon_profile"></span></a>
                 </div>
             </div>
         </div>
@@ -83,7 +78,7 @@
             <div class="col-lg-8 mx-auto">
                 <div class="bg-white rounded text-center p-5 shadow-down">
                     <h4 class="mb-80">Contact Form</h4>
-                    <form action="https://formsubmit.co/methjaya252@gmail.com" method="post" class="row">
+                    <form action="contact_us" method="post" class="row">
                         <div class="col-md-6">
                             <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4" required>
                         </div>
@@ -115,13 +110,13 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="footer__logo">
-                    <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    <a href="./index.jsp"><img src="img/logo.png" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="footer__nav">
                     <ul>
-                        <li class="active"><a href="./index.html">Homepage</a></li>
+                        <li class="active"><a href="./index.jsp">Homepage</a></li>
 
 
                         <li><a href="#">Contacts</a></li>
@@ -130,7 +125,7 @@
             </div>
             <div class="col-lg-3">
                 <p>
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="fa fa-heart" aria-hidden="true"></i> by SNS Developers
+                    Copyright &copy;<script>document.write(new Date().getFullYear().toString());</script> All rights reserved |  <i class="fa fa-heart" aria-hidden="true"></i> by SNS Developers
                 </p>
 
             </div>
@@ -154,7 +149,6 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/player.js"></script>
-<script src="js/jquery.nice-select.min.js"></script>
 <script src="js/mixitup.min.js"></script>
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/owl.carousel.min.js"></script>

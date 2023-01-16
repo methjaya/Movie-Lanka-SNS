@@ -9,12 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aeba8be1-5170-47ea-a306-eb8f79f653c9" name="Changes" comment="Ticket Cancel bug fix">
+    <list default="true" id="aeba8be1-5170-47ea-a306-eb8f79f653c9" name="Changes" comment="Bug Fix - SMTP">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/contact_us.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/final.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/final.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/js/seatsel.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/js/seatsel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/SMTP_Gmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/SMTP_Gmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sahansajava/payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/contact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sahansaJava_war_exploded/contact.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +171,7 @@
       <workItem from="1673824308829" duration="207000" />
       <workItem from="1673824537462" duration="676000" />
       <workItem from="1673825234855" duration="1104000" />
-      <workItem from="1673826372279" duration="571000" />
+      <workItem from="1673826372279" duration="1358000" />
     </task>
     <task id="LOCAL-00001" summary="Final Updated - Ticket Cancel Added">
       <created>1673821770484</created>
@@ -189,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673823264920</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Bug Fix - SMTP">
+      <created>1673827233265</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673827233265</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +214,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Final Updated - Ticket Cancel Added" />
     <MESSAGE value="Ticket Cancel bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ticket Cancel bug fix" />
+    <MESSAGE value="Bug Fix - SMTP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug Fix - SMTP" />
   </component>
 </project>
