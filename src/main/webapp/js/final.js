@@ -29,6 +29,7 @@ function IF_Cancelled()
     // Delete all the added records
     $.ajax({
         type: "POST",
-        url: "remove_records"
+        url: "remove_records",
+        data: {}
     });
 }
